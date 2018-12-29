@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>登录东方购物-东方购物</title>
+        <meta name="apple-itunes-app" content="app-id=699446032">
+        <link type="text/css" href="../css/global20140417.css" rel="stylesheet">
+        <link type="text/css" href="../css/global-v4.css" rel="stylesheet">
+        <link type="text/css" href="../css/icon-style.css" rel="stylesheet">
+        <link type="text/css" href="../css/common.css" rel="stylesheet">
+        <link type="text/css" href="../css/slick.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/season0.css" />
+        <link type="text/css" href="../css/common.css" rel="stylesheet">
+        <link type="text/css" href="../css/login20140312.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/denglu.css" />
+<link type="text/css" href="../css/more.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/common_1.js"></script>
+<script type="text/javascript" src="../js/denglu.js"></script>
+    </head>
+<body style="">
+        <div class="headerConent">
+            <!-- 个人信息 -->
+            <div id="" class="g-area-done area_more hidden">
+                <div class="area_select">
+                    <h3>已登录</h3>
+                    <span id="pop_after_close" class="close mask_close"></span>
+                    <div class="area_select_done">您的账户地址为
+                        <b>
+                            <span id="substation_name1">广州</span></b>，系统自动帮您跳转至
+                        <em>
+                            <span id="substation_name2">广州</span></em>
+                    </div>
+                    <div class="area_select_done_tips">
+                        <span>登录后不能更改分站，如需更改分站请退出后再选择。</span></div>
+                    <div class="area_select_done_button">
+                        <button class="ok" id="substation_ok">我知道了</button></div>
+                </div>
+            </div>
+            <div class="g-site-nav">
+                <div class="g-container-1190">
+                <!-- 头部 -->
+                    <div class="user_info" id="user_info">
+                        <span class="g-welcome">欢迎光临 OCJ.COM.CN</span>
+                        <span class="g-normal">
+                            <a href="">登录</a></span>
+                        <span class="g-normal">
+                            <a href="../html/sign_in.html">注册</a></span>
+                    </div>
+                    <!--用户信息-->
+                    <span class="g-normal">送货至:</span>
+                    <div class="g-area">
+                        <dl>
+                            <dt>
+                                <s>
+                                </s>
+                                <span class="g-location hiconfont"><img src="../images/r-area1.png" alt="" /></span>
+                                <span class="g-cur-area" id="g-cur-area">
+                                    <b class="lb">上海</b></span>
+                                <span class="change" id="change-areay">[更换]</span></dt>
+                            <dd>
+                                <div class="g-location-choose" id="g-location-choose">
+                                    <ul class="hot">
+                                        <li class="clear_float hot">
+                                            <b>
+                                                <img src="../images/tophot.png">热门省市</b>
+                                            <span>上海</span>
+                                            <span style="color:#d50000;">北京</span>
+                                            <span>江苏</span>
+                                            <span>浙江</span>
+                                            <span>湖北</span>
+                                            <span>四川</span>
+                                            <span>黑龙江</span></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="clear_float">
+                                            <b>A</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="6011">安徽</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>B</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2001">北京</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>C</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2003">重庆</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>F</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2013">福建</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>G</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2017">广东</a></span>
+                                            <span>
+                                                <a href="" id="2019">贵州</a></span>
+                                            <span>
+                                                <a href="" id="2022">甘肃</a></span>
+                                            <span>
+                                                <a href="" id="2025">广西</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>H</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="6060">黑龙江</a></span>
+                                            <span>
+                                                <a href="" id="6030">湖北</a></span>
+                                            <span>
+                                                <a href="" id="2004">河北</a></span>
+                                            <span>
+                                                <a href="" id="2015">河南</a></span>
+                                            <span>
+                                                <a href="" id="2016">湖南</a></span>
+                                            <span>
+                                                <a href="" id="2018">海南</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>J</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2008">江苏</a></span>
+                                            <span>
+                                                <a href="" id="2007">吉林</a></span>
+                                            <span>
+                                                <a href="" id="2014">江西</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>L</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2006">辽宁</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>N</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2024">内蒙古</a></span>
+                                            <span>
+                                                <a href="" id="2027">宁夏</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>Q</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2023">青海</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>S</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a class="cur" style="color:#d50000;" href="" id="2000">上海</a></span>
+                                            <span>
+                                                <a href="" id="2005">山西</a></span>
+                                            <span>
+                                                <a href="" id="2030">四川</a></span>
+                                            <span>
+                                                <a href="" id="2021">陕西</a></span>
+                                            <span>
+                                                <a href="" id="2029">山东</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>T</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2002">天津</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>X</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2026">中国西藏</a></span>
+                                            <span>
+                                                <a href="" id="2028">中国新疆</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>Y</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2020">云南</a></span>
+                                            <!-- </span> --></li>
+                                        <li class="clear_float">
+                                            <b>Z</b>
+                                            <!-- <span class="loc"> -->
+                                            <span>
+                                                <a href="" id="2011">浙江</a></span>
+                                            <!-- </span> --></li>
+                                    </ul>
+                                    <!-- <p><a href="" >选择其它城市</a></p> --></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="g-weixin">
+                        <dl>
+                            <dt>
+                                <s>
+                                </s>
+                                <span>
+                                    <img src="../images/topimg5.png"></span>
+                                <b>微信</b>
+                            </dt>
+                            <dd>
+                                <div class="g-weixin-pic" id="g-weixin-pic">
+                                    <p class="g-weixin-txt1">扫一扫，关注我们</p>
+                                    <img src="../images/1_20170904091940_98.jpg" alt="东方购物">
+                                    <p class="g-weixin-txt2">微信服务号：OCJ_FW
+                                        <br>
+                                        <font color="#A30000">关注并绑定账户送5元积分哟</font></p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <span class="g-tv">
+                        <span class="hiconfont"><img src="../images/r-areaTV.png"  alt="" /></span>
+                        <a href="">TV版</a></span>
+                    <span class="g-phone">
+                        <!-- 移动版 -->
+                        <span class="hiconfont"><img src="../images/r-phone.png"  alt="" /></span>
+                        <a href="">移动版</a></span>
+                    <span class="g-guest-center">
+                        <!-- 顾客中心 -->
+                        <span class="hiconfont"><img src="../images/r-areaPepo.png" alt="" /></span>
+                        <a href="">顾客中心</a></span>
+                    <div class="g-myocj">
+                        <dl>
+                            <dt>
+                                <s>
+                                </s>
+                                <span class="hiconfont"><img src="../images/r-areaPepo2.png" alt="" /></span>
+                                <b>
+                                    <a href="">我的购物</a></b>
+                                <span class=""><img src="../images/r-area2.png" height="5" width="8" alt="" /></span>
+                            </dt>
+                            <dd>
+                                <div class="g-myocj-more">
+                                    <ul>
+                                        <li>
+                                            <a href="">订单查询</a></li>
+                                        <li>
+                                            <a href="">积分查询</a></li>
+                                        <li>
+                                            <a href="">抵用券查询</a></li>
+                                        <li>
+                                            <a href="">我的收藏</a></li>
+                                        <li>
+                                            <a href="">修改信息</a></li>
+                                    </ul>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="g-side-bar">
+                <div class="olympicSidebarWrap" style="background-color: #c7c5eb;">
+                    <div class="silderNavNoControl silderContentFixShow slick-initialized slick-slider">
+                        <div aria-live="polite" class="slick-list draggable" tabindex="0">
+                            <div class="slick-track" style="opacity: 1; width: 320px;">
+                                <div class="silderContentFixShowImg slick-slide" data-slick-index="0" aria-hidden="true" style="width: 80px; position: relative; left: 0px; top: 0px; z-index: 800; opacity: 0;">
+                                    <a href="">
+                                        <img src="../images/1_20181225110809_91.jpg"></a>
+                                </div>
+                                <div class="silderContentFixShowImg slick-slide" data-slick-index="1" aria-hidden="true" style="width: 80px; position: relative; left: -80px; top: 0px; z-index: 800; opacity: 0;">
+                                    <a href="">
+                                        <img src="../images/1_20181130093326_2.jpg"></a>
+                                </div>
+                                <div class="silderContentFixShowImg slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 80px; position: relative; left: -160px; top: 0px; z-index: 900; opacity: 1;">
+                                    <a href="">
+                                        <img src="../images/1_20181130103822_1.jpg"></a>
+                                </div>
+                                <div class="silderContentFixShowImg slick-slide" data-slick-index="3" aria-hidden="true" style="width: 80px; position: relative; left: -240px; top: 0px; z-index: 800; opacity: 0;">
+                                    <a href="">
+                                        <img src="../images/1_20180813173124_81.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="slick-dots" style="display: block;">
+                            <li class="" aria-hidden="true">
+                                <button type="button" data-role="none">1</button></li>
+                            <li aria-hidden="true" class="">
+                                <button type="button" data-role="none">2</button></li>
+                            <li aria-hidden="false" class="slick-active">
+                                <button type="button" data-role="none">3</button></li>
+                            <li aria-hidden="true" class="">
+                                <button type="button" data-role="none">4</button></li>
+                        </ul>
+                    </div>
+                    <!-- 只有首页显示 -->
+                    <div class="server">
+                        <div class="bird">
+                            <a href="">东东客服</a></div>
+                        <div class="g-go-top">返回顶部</div></div>
+                    <!-- 音乐播放器 --></div>
+                <!-- 员工意见提交 -->
+                <div class="two-code" id="suggesty" style="display: none; margin-bottom: 5px;">
+                    <a href="">
+                        <img src="../images/hio_bird.png" alt="侧边">
+                        <span>建议/意见</span></a>
+                </div>
+            </div>
+            <link type="text/css" href="" rel="stylesheet">
+            <!-- banner顶通 -->
+            <!-- 公告栏 -->
+            <div>
+                <!-- TOPLOGO栏 -->
+                <div class="g-header-main g-container-1190 clear_float">
+                    <!-- 购物车右边logo -->
+                    <!-- 非TV LOGO -->
+                    <a href="../index.html" class="g-main-logo">
+                        <!-- 根据c_code 显示不同的LOGO -->
+                        <img src="../images/cplogo0.png"></a>
+                    <!-- TV LOGO -->
+                    <div class="g-logos-min">
+                        <!-- 团 -->
+                        <!-- 食品馆 -->
+                        <!-- 全球购 -->
+                        <!-- 嗨鸥看看 -->
+                        <!-- 名品馆 -->
+                        <!-- O+ -->
+                        <!-- 看电影 -->
+                        <!-- 新看电影 -->
+                        <!-- 登陆,注册,购物车 -->
+                        <a href="">
+                            <img src="../images/space.gif"></a>
+                    </div>
+                    <!-- 样式，简单头长搜索框 -->
+                    <div class="g-search-box g-search-box-long">
+                        <div class="search-bar">
+                            <link type="text/css" href="" rel="stylesheet">
+                            <form name="search_form" id="search_form">
+                                <input id="title_srch" type="text" class="keyword" name="keyword" placeholder="" autocomplete="off" size="20" maxlength="20">
+                                <button id="tilte_submit">搜索</button></form>
+                            <div class="relation-search" id="topsearch_tips" style="display:none"></div>
+                        </div>
+                        <div class="search-down">
+                            <span class="g-hotlist">
+                                <a href="">销售排行榜</a></span>
+                            <!-- 搜索框下边的推荐 -->
+                            <ul class="keywords">
+                                <li>
+                                    <a href="">
+                                        <font color="家电">家电盘点</font></a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <font color="服饰">时尚盛典</font></a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <font color="新人专享">新人专享</font></a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <font color="双旦同庆">双旦同庆</font></a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <font color="味觉研究室">味觉研究室</font></a>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 购物车右边logo -->
+                    <div class="headerCompLogoRight">
+                        <a href="">
+                            <img src="../images/1_20181228172534_46.jpg" alt="东方购物"></a>
+                    </div>
+                </div>
+                <!-- 菜单 --></div>
+        </div>
+        <input type="hidden" name="login" id="login" value="">
+        <style>SPAN.tips_ok { DISPLAY: inline-block; ZOOM: 1; WIDTH: 14px; HEIGHT: 13px; MARGIN-LEFT: 10px; BACKGROUND: url(../images/bg.icon.ok.1.gif); }</style>
+        <div id="container">
+            <div id="containerContent">
+                <div class="loginnew_box clear_float">
+                    <!-- left box -->
+                    <div class="lcol">
+                        <div class="slideshow">
+                            <div class="slider" style="position: relative; width: 450px; height: 300px; overflow: hidden;">
+                                <a href="" style="position: absolute; top: 0px; left: -450px; display: none; z-index: 4; opacity: 1; width: 450px; height: 300px;">
+                                    <img src="../images/1_20181228172630_3.jpg"></a>
+                                <a href="" style="position: absolute; top: 0px; left: -450px; display: none; z-index: 4; opacity: 1; width: 450px; height: 300px;">
+                                    <img src="../images/1_20180731170947_15.jpg"></a>
+                                <a href="" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 5; opacity: 1; width: 450px; height: 300px;">
+                                    <img src="../images/1_20180704150846_87.jpg"></a>
+                                <a href="" style="position: absolute; top: 0px; left: -450px; display: none; z-index: 4; opacity: 1; width: 450px; height: 300px;">
+                                    <img src="../images/1_20180105192935_3.jpg"></a>
+                            </div>
+                            <div class="pager_wrap">
+                                <div id="loginnew_pager" class="pager">
+                                    <a href="" class=""></a>
+                                    <a href="" class=""></a>
+                                    <a href="" class="activeSlide"></a>
+                                    <a href="" class=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right box -->
+                    <form>
+                        <input type="hidden" name="returnUrl" id="returnUrl" value="">
+                        <input type="hidden" name="loginForm" id="loginForm" value="">
+                        <input type="hidden" name="login_random_num" id="login_random_num" value="">
+                        <div class="rcol">
+                            <div class="form_wrap">
+                                <div class="form">
+                                    <div class="item clear_float">
+                                        <div class="label clear_float">
+                                            <span class="title">登录名</span>
+                                            <!--<span class="tips">您输入的用户名不存在</span>-->
+                                            <span class="tips" id="userId" style="display:none;">&nbsp;&nbsp;用户名不能为空</span>
+                                            <!-- <a class="faq" href="">忘记用户名?</a>
+                                            -->
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" tabindex="1" name="loginid" placeholder="用户名/手机/邮箱" style="color: rgb(157, 166, 171); font-size: 14px;" class="username hock" mark="default-text" id="loginid" init="done" defvalue="用户名/手机/邮箱">
+                                            <a class="input_control" href=""></a>
+                                        </div>
+                                    </div>
+                                    <!-- .item -->
+                                    <div class="item clear_float">
+                                        <div class="label clear_float">
+                                            <span class="title">密码</span>
+                                            <span class="tips" id="pwdId" style="display:none;">&nbsp;&nbsp;密码不能为空</span>
+                                            <!--<span class="tips">您输入的密码不正确</span>-->
+                                            <a class="faq" href="">忘记密码?</a></div>
+                                        <div class="field">
+                                            <input type="password" name="password" id="password" tabindex="2" class="password hock">
+                                            <a class="input_control" href=""></a>
+                                        </div>
+                                    </div>
+                                    <!-- .item -->
+                                    <div class="item clear_float">
+                                        <div class="label clear_float">
+                                            <span class="title">验证码&nbsp;&nbsp;</span>
+                                            <span id="checkSecurity"></span>
+                                            <span id="securityVal" style="float: none; color:red;"></span>
+                                            <!-- <span class="tips">验证码错误</span> --></div>
+                                        <div class="field field3">
+                                            <input type="text" id="security" name="security" class="valcode hock" tabindex="3" maxlength="4">
+                                            <span class="valcode">
+                                                <img id="valcode" src="../images/1" alt=""></span>
+                                            <span class="valcode_refresh">看不清
+                                                <br>换一张</span>
+                                            <a id="inputConrol" class="input_control " href=""></a>
+                                        </div>
+                                    </div>
+                                    <!-- .item -->
+                                    <div class="submit">
+                                        <img style="cursor:pointer;" src="../images/newlogin.submit.jpg" alt="登录"></div>
+                                    <!-- .submit -->
+                                    <div class="item clear_float">
+                                        <div class="field field_remember">
+                                            <label>
+                                                <input id="saveCookie" checked="checked" tabindex="4" value="1" type="checkbox">&nbsp;记住登录名</label>
+                                            <a class="register" href="">免费注册</a></div>
+                                    </div>
+                                    <!-- .item -->
+                                    <p class="line">
+                                        <img src="../images/newlogin.line.jpg" width="270" height="1"></p>
+                                    <div class="others">
+                                        <span>其他登录方式:</span>
+                                        <div class="others_link">
+                                            <a href="" title="新浪微博 ">
+                                                <img src="../images/img.weibo.mini.gif" alt="新浪微博"></a>
+                                            <a href="" title="支付宝">
+                                                <img src="../images/img.alipay.mini.gif" alt="支付宝"></a>
+                                            <a href="" title="QQ登录">
+                                                <img src="../images/Connect_logo_1.png" alt="QQ登录"></a>
+                                            <a href="" title="微信登录">
+                                                <img src="../images/WEIXIN.png" alt="微信"></a>
+                                        </div>
+                                    </div>
+                                    <!-- .others --></div>
+                                <!-- .form --></div>
+                            <!-- .form_wrap --></div>
+                    </form>
+                    <!-- right box end --></div>
+                <!-- .loginnew_box --></div>
+        </div>
+        <!-- 登录验证弹框开始 -->
+        <input type="hidden" value="" id="warning">
+        <style type="text/css">.sp_extra { margin-left:846px; margin-bottom:26px; margin-top:-26px; position:relative; top:-8px; *padding-bottom:1px; *margin-bottom:0; } .sp_extra img { float:left; margin-top:2px; } .sp_extra a { display:block; float:left; width:87px; height:20px; background:#EEEEEE; line-height:20px; text-indent:10px; margin-left:6px; } .sp_extra a img { margin-left:3px; float:none; margin-top:-1px; }</style>
+        <div class="footerConent">
+            <div class="g-footer g-container-1190">
+                <div class="g-footer-menu clear_float">
+                    <div class="g-footer-fl-menu clear_float">
+                        <div class="menu">
+                            <div class="list">
+                                <h4 class="title-1"></h4>
+                                <ul>
+                                    <li class="title">订购指南</li>
+                                    <li>
+                                        <a href="">会员注册</a></li>
+                                    <li>
+                                        <a href="">订购方式</a></li>
+                                    <li>
+                                        <a href="">交换/退货</a></li>
+                                    <li>
+                                        <a href="">发票指南</a></li>
+                                    <li>
+                                        <a href="">节能补贴</a></li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h4 class="title-2"></h4>
+                                <ul>
+                                    <li class="title">支付配送</li>
+                                    <li>
+                                        <a href="">支付方式</a></li>
+                                    <li>
+                                        <a href="">配送时间</a></li>
+                                    <li>
+                                        <a href="">配送范围</a></li>
+                                    <li>
+                                        <a href="">免费配送</a></li>
+                                    <li>
+                                        <a href="">有关验货</a></li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h4 class="title-3"></h4>
+                                <ul>
+                                    <li class="title">顾客中心</li>
+                                    <li>
+                                        <a href="">使用条款</a></li>
+                                    <li>
+                                        <a href="">积分规则</a></li>
+                                    <li>
+                                        <a href="">退换货政策</a></li>
+                                    <li>
+                                        <a href="">信息保护</a></li>
+                                    <li>
+                                        <a href="">更正说明</a></li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h4 class="title-4"></h4>
+                                <ul>
+                                    <li class="title">会员社区</li>
+                                    <li>
+                                        <a href="">会员权益</a></li>
+                                    <li>
+                                        <a href="">会员俱乐部</a></li>
+                                    <li>
+                                        <a href="">便民中心</a></li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h4 class="title-5"></h4>
+                                <ul>
+                                    <li class="title">特色服务</li>
+                                    <li>
+                                        <a href="">分期付款</a></li>
+                                    <li>
+                                        <a href="">企业团购</a></li>
+                                    <li>
+                                        <a href="">营销联盟</a></li>
+                                    <li>
+                                        <a href="">上门服务</a></li>
+                                    <li>
+                                        <a href="">免费退换货</a></li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <h4 class="title-7"></h4>
+                                <ul>
+                                    <li class="title">商家合作</li>
+                                    <li>
+                                        <a href="">合作招商</a></li>
+                                    <li>
+                                        <a href="">合作伙伴</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-footer-fr-board">
+                        <!-- 公告 -->
+                        <div class="notice clear_float">
+                            <h4>公告事项</h4>
+                            <div class="notice_box">
+                                <a href="">“节节高升”猪年银条（1000克）直播中奖名单公告</a>
+                                <a href="">11月B刊（143期）目录活动中奖公告</a>
+                                <a href="">“疯狂爽12每小时直播抽奖”活动中奖公告</a>
+                                <a href="">12月节目商品状况</a>
+                                <a href="">“疯狂爽12——幸运锦鲤”活动中奖公告</a>
+                                <a href="">“东方明珠广场舞大赛——直通车”活动投票结果公告</a></div>
+                            <span class="more">
+                                <a href="">更多</a></span>
+                        </div>
+                        <!-- 企业社会责任 -->
+                        <div class="clear_float">
+                            <div class="g-social">
+                                <a href="">
+                                    <img src="../images/1_20150814190801_94.jpg" alt="社会责任"></a>
+                                <!-- <a href=""> <img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9939/11261/1_20150814190801_94.jpg" alt="社会责任" /></a> -->
+                            </div>
+                            <div class="g-social">
+                                <a href="">
+                                    <img src="../images/1_20150814190832_60.jpg" alt="我的中国梦"></a>
+                                <!-- <a href=""> <img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9939/11261/1_20150814190832_60.jpg" alt="我的中国梦" /></a> -->
+                            </div>
+                        </div>
+                        <!--暂时不要订阅功能-->
+                        <!-- <div class="g-subscribe">
+                        <input type="text" value="输入你的邮箱订阅优惠信息" mark="default-text" defvalue="输入您的邮箱订阅优惠活动邮件"/>
+                        <button>订阅</button></div>
+                        -->
+                        <!--暂时不要订阅功能--></div>
+                </div>
+                <div class="g-footer-content g-container-1190">
+                    <div class="logo-dfmz">
+                        <a href="" target="_blank">
+                            <img src="../images/logo_dfmz.png">
+                            <span>旗下</span></a>
+                    </div>
+                    <div class="textIntroFooter">上海东方电视购物有限公司 版权所有 &nbsp; &nbsp; Copyright © 2004-2019 ocj.com.cn All Rights Reserved
+                        <div class="textIntroFooter">上海800-708-8000（固话） &nbsp; &nbsp; （021）51119900（手机） &nbsp; &nbsp; 全国800-708-8000（固话） &nbsp; &nbsp; 400-889-8000（手机）</div>
+                        <div class="textIntroFooter">信息系统安全等级保护评定备案证明编号 31001099027-00001
+                            <span></span>信息网络传播视听节目许可证：0908230</div>
+                        <div class="textIntroFooter">食品经营许可证：JY13101100062462 &nbsp; &nbsp; 互联网药品信息服务资格证书（沪）- 非经营性 - 2014-0031 &nbsp; &nbsp; 沪杨食药监械经营许20187004号</div></div>
+                    <div class="g-footer-icon">
+                        <div class="g-footer-icon-content">
+                            <div class="g-footer-icon-content-box">
+                                <ul>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.1.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.3.jpg" alt="footerImg"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.4.jpg" alt="footerImg"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.8.jpg" alt="footerImg"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.9.jpg" alt="footerImg"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <img src="../images/img.footer.icon.wanggou.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="searchForm" style="display: none;">
+                    <input type="hidden" name="search_item" value="">
+                    <input type="hidden" name="sgroup" value="">
+                    <input type="hidden" name="mgroup" value="">
+                    <input type="hidden" name="brand" value="">
+                    <input type="hidden" name="ven_code" value="">
+                    <input type="hidden" name="dely_area" value="">
+                    <input type="hidden" name="search" value="">
+                    <input type="hidden" name="prop_value_code" value="">
+                    <input type="hidden" name="group_count" value="">
+                    <input type="hidden" name="tid" value="3">
+                    <input type="hidden" name="showType" value="">
+                    <input type="hidden" name="sale_price_pr" value="">
+                    <input type="hidden" name="sale_price_end" value="">
+                    <input type="hidden" name="search_item_gb" value="">
+                    <input type="hidden" name="item_Code" value="">
+                    <input type="hidden" name="item_Code_A" value="">
+                    <input type="hidden" name="item_Code_B" value="">
+                    <input type="hidden" name="searchSrcType" value="">
+                    <input type="hidden" name="wLgroup" value="">
+                    <input type="hidden" name="promotions" value="">
+                    <input type="hidden" name="promo_name" value="">
+                    <input type="hidden" name="tvname" value="">
+                    <input type="hidden" name="price_min" value="">
+                    <input type="hidden" name="price_max" value="">
+                    <input type="hidden" name="search_name" value="">
+                    <input type="hidden" name="kjtyn" value="">
+                    <input type="hidden" name="otuanyn" value=""></form>
+                <!-- div 隐藏 延迟显示 -->
+                <form id="sForm" style="display: none;">
+                    <input type="hidden" name="search" maxlength="20" value="">
+                    <input id="isIE" type="hidden" name="isIE8" value="0"></form>
+            </div>
+    </body>
+
+</html>

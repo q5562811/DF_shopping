@@ -1,0 +1,970 @@
+.pv_shop_category {
+  width:100%;
+  position:relative;
+}
+.pv_shop_category_title {
+  width:100%;
+  position:relative;
+  padding-bottom:10px;
+}
+.pv_shop_category_title H1 {
+  FLOAT:left;
+  DISPLAY:inline;
+  HEIGHT:25px;
+  LINE-HEIGHT:25px
+}
+.pv_shop_category_title DIV.search {
+  FLOAT:right;
+  DISPLAY:inline;
+  WIDTH:165px;
+  HEIGHT:25px;
+  BACKGROUND:url(../../images/shop/bg.search.1.gif) center center no-repeat
+}
+.pv_shop_category_title DIV.search INPUT.keyword {
+  WIDTH:130px;
+  HEIGHT:15px;
+  LINE-HEIGHT:15px;
+  BORDER:0px;
+  BACKGROUND:transparent;
+  FONT-SIZE:12px;
+  PADDING:5px;
+  COLOR:#737f86
+}
+.pv_shop_category_title DIV.search INPUT.submit {
+  WIDTH:25px;
+  HEIGHT:25px;
+  CURSOR:pointer
+}
+.pv_shop_category_title DIV.search_words {
+  FLOAT:right;
+  DISPLAY:inline;
+  OVERFLOW:hidden
+}
+.pv_shop_category_title DIV.search_words UL {
+  MARGIN-LEFT:-1px
+}
+.pv_shop_category_title DIV.search_words LI {
+  PADDING-LEFT:11px;
+  PADDING-RIGHT:10px;
+  FLOAT:left;
+  DISPLAY:inline;
+  HEIGHT:25px;
+  LINE-HEIGHT:25px;
+  OVERFLOW:hidden;
+  BACKGROUND:url(../../images/bg.split.1.gif) left center no-repeat
+}
+.pv_shop_category_main {
+  WIDTH:100%;
+  BORDER-TOP:#239cdc 1px solid
+}
+.pv_shop_category_main_submenu {
+  WIDTH:200px;
+  FLOAT:left;
+  DISPLAY:inline;
+  POSITION:relative;
+  Z-INDEX:1000
+}
+.pv_shop_category_main_submenu DL {
+  WIDTH:100%;
+  POSITION:relative;
+  Z-INDEX:900;
+  PADDING-BOTTOM:5px;
+  BACKGROUND:#fff;
+  BORDER-BOTTOM:#d7d7d7 1px solid
+}
+.pv_shop_category_main_submenu DT {
+  MARGIN:0px;
+  FONT-SIZE:13px;
+  FONT-FAMILY:MicroSoft YaHei;
+  FONT-WEIGHT:bold;
+  HEIGHT:30px;
+  LINE-HEIGHT:30px;
+  PADDING-LEFT:15px;
+  BACKGROUND:url(../../images/bg.icon.1.gif) 180px -73px no-repeat;
+  COLOR:#333
+}
+.pv_shop_category_main_submenu DD {
+  LINE-HEIGHT:20px;
+  PADDING-LEFT:15px;
+  COLOR:#333
+}
+.pv_shop_category_main_submenu DD A {
+  DISPLAY:block;
+  COLOR:#333;
+  TEXT-DECORATION:none
+}
+.pv_shop_category_main_submenu DD A:hover {
+  COLOR:#239cdc;
+  TEXT-DECORATION:underline
+}
+.pv_shop_category_main_submenu DL UL {
+  min-WIDTH:200px;
+  PADDING:10px;
+  POSITION:absolute;
+  TOP:0px;
+  LEFT:200px;
+  Z-INDEX:1000;
+  BACKGROUND:#fff;
+  BORDER:#239cdc 2px solid;
+  DISPLAY:none
+}
+.pv_shop_category_main_submenu DL UL LI {
+  HEIGHT:16px;
+  LINE-HEIGHT:16px;
+  PADDING:5px 0px 5px 0px;
+  COLOR:#333;
+  min-width:200px;
+}
+.pv_shop_category_main_submenu DL UL LI A {
+  DISPLAY:block;
+  HEIGHT:16px;
+  LINE-HEIGHT:16px;
+  COLOR:#333;
+  PADDING:0px 15px 0px 15px;
+  BACKGROUND:url(../../images/bg.icon.1.gif) 0px -48px no-repeat;
+  TEXT-DECORATION:none
+}
+.pv_shop_category_main_submenu DL UL LI A:hover {
+  COLOR:#239cdc;
+  TEXT-DECORATION:underline
+}
+.pv_shop_category_main_submenu DL.on {
+  BACKGROUND:#239cdc
+}
+.pv_shop_category_main_submenu DL.on DT {
+  BACKGROUND:url(../../images/bg.icon.1.gif) 180px -105px no-repeat;
+  COLOR:#fff
+}
+.pv_shop_category_main_submenu DL.on A {
+  COLOR:#fff;
+  TEXT-DECORATION:none
+}
+.pv_shop_category_main_submenu DL.on A:hover {
+  COLOR:#fff;
+  TEXT-DECORATION:underline
+}
+.pv_shop_category_main_submenu DL.on UL LI A {
+  COLOR:#333;
+  TEXT-DECORATION:none
+}
+.pv_shop_category_main_submenu DL.on UL LI A:hover {
+  COLOR:#239cdc;
+  TEXT-DECORATION:underline
+}
+.pv_shop_category_main_submenu DIV.logo_list {
+  WIDTH:100%
+}
+.pv_shop_category_main_submenu DIV.logo_list UL {
+  PADDING-TOP:10px
+}
+.pv_shop_category_main_submenu DIV.logo_list UL LI {
+  PADDING-TOP:10px
+}
+.pv_shop_category_main_submenu DIV.logo_list UL LI IMG {
+  WIDTH:198px;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_submenu DIV.hot_list {
+  WIDTH:100%;
+  PADDING-TOP:10px
+}
+.pv_shop_category_main_submenu DIV.hot_list_box {
+  WIDTH:198px;
+  PADDING-BOTTOM:13px;
+  BORDER:#e6e6e6 1px solid
+}
+.pv_shop_category_main_submenu DIV.hot_list_box LI {
+  WIDTH:80px;
+  FLOAT:left;
+  DISPLAY:inline;
+  PADDING:13px 0px 0px 13px
+}
+.pv_shop_category_main_submenu DIV.hot_list_box LI A {
+  DISPLAY:block;
+  WIDTH:80px;
+  HEIGHT:80px;
+  POSITION:relative
+}
+.pv_shop_category_main_submenu DIV.hot_list_box LI A SPAN.topic {
+  WIDTH:80px;
+  HEIGHT:25px;
+  LINE-HEIGHT:25px;
+  BACKGROUND:#000;
+  TEXT-ALIGN:center;
+  COLOR:#fff;
+  POSITION:absolute;
+  BOTTOM:0px;
+  LEFT:0px;
+  OPACITY:0.7;
+  FILTER:alpha(opacity=70);
+  DISPLAY:none
+}
+.pv_shop_category_main_submenu DIV.hot_list_box LI A:hover SPAN.topic {
+  DISPLAY:block
+}
+.pv_shop_category_main_rightbox {
+  WIDTH:900px;
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_bigeyes {
+  WIDTH:690px;
+  HEIGHT:324px;
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_bigeyes DIV.image {
+  position:relative;
+  overflow:hidden;
+  width:690px;
+  height:324px
+}
+.pv_shop_category_main_rightbox_bigeyes DIV.image IMG {
+  position:absolute;
+  top:-25px;
+  left:-5px;
+  width:700px;
+  height:373px;
+}
+.pv_shop_category_main_rightbox_propose {
+  WIDTH:200px;
+  HEIGHT:324px;
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_propose_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_propose_box_list {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_propose_box_list_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_propose_box_list_content {
+  WIDTH:198px;
+  HEIGHT:198px;
+  OVERFLOW:hidden;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_propose_box_list_content IMG {
+  WIDTH:198px;
+  HEIGHT:198px
+}
+.pv_shop_category_main_rightbox_propose_box_list_content DIV.item_list {
+  DISPLAY:none
+}
+.pv_shop_category_main_rightbox_propose_pic {
+  WIDTH:198px;
+  HEIGHT:112px;
+  MARGIN-TOP:10px;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_propose_pic IMG {
+  WIDTH:198px;
+  HEIGHT:112px
+}
+.pv_shop_category_main_rightbox_suggest {
+  WIDTH:200px;
+  HEIGHT:324px;
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_suggest_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_suggest_box_list {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_suggest_box_list_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_suggest_box_list_content {
+  WIDTH:198px;
+  HEIGHT:322px;
+  OVERFLOW:hidden;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_suggest_box_list_content IMG {
+  WIDTH:198px;
+  HEIGHT:322px
+}
+.pv_shop_category_main_rightbox_suggest_box_list_content DIV.item_list {
+  DISPLAY:none
+}
+.pv_shop_category_main_rightbox_sale {
+  WIDTH:688px;
+  HEIGHT:222px;
+  FLOAT:left;
+  DISPLAY:inline;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_sale DIV.h2 {
+  PADDING:0px 10px 0px 10px
+}
+.pv_shop_category_main_rightbox_sale DIV.h2 H2 {
+  PADDING-LEFT:5px;
+  BORDER-BOTTOM:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_sale_list {
+  PADDING-LEFT:10px
+}
+.pv_shop_category_main_rightbox_sale_list DIV.item1 {
+  PADDING-LEFT:18px;
+  PADDING-RIGHT:18px
+}
+.pv_shop_category_main_rightbox_ad {
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_ad IMG {
+  WIDTH:198px;
+  HEIGHT:222px;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_hot_list {
+  PADDING-LEFT:4px;
+  DISPLAY:none;
+  BORDER-LEFT:#d7d7d7 1px solid;
+  BORDER-RIGHT:#d7d7d7 1px solid;
+  BORDER-BOTTOM:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_hot_list DIV.item1 {
+  PADDING-LEFT:24px;
+  PADDING-RIGHT:24px
+}
+.pv_shop_category_main_rightbox_brand_flagship {
+  WIDTH:688px;
+  HEIGHT:222px;
+  FLOAT:left;
+  DISPLAY:inline;
+  OVERFLOW:hidden;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_brand_flagship DIV.h2 {
+  PADDING:0px 10px 0px 10px
+}
+.pv_shop_category_main_rightbox_brand_flagship DIV.h2 H2 {
+  PADDING-LEFT:5px;
+  BORDER-BOTTOM:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_brand_flagship_list {
+  PADDING-LEFT:3px
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.big {
+  PADDING:13px;
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.big IMG {
+  WIDTH:120px;
+  HEIGHT:170px
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.small {
+  PADDING-TOP:15px;
+  FLOAT:left;
+  DISPLAY:inline;
+  BORDER-LEFT:#d7d7d7 1px solid;
+  BORDER-RIGHT:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.small IMG {
+  WIDTH:119px;
+  HEIGHT:46px
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.small SPAN {
+  DISPLAY:block;
+  LINE-HEIGHT:16px;
+  PADDING-BOTTOM:25px;
+  TEXT-ALIGN:center
+}
+.pv_shop_category_main_rightbox_brand_flagship_list DIV.small DIV.two {
+  PADDING-TOP:7px;
+  BORDER-TOP:#d7d7d7 1px solid
+}
+.pv_shop_category_main_rightbox_group_purchase {
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_main_rightbox_group_purchase_list {
+  WIDTH:198px;
+  HEIGHT:222px;
+  BORDER:#d7d7d7 1px solid;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_group_purchase_list H2 {
+  PADDING-LEFT:20px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_group_purchase_list_box SPAN.count {
+  TOP:-18px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_box DIV.prev SPAN {
+  TOP:-28px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_box DIV.next SPAN {
+  TOP:-28px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_content {
+  WIDTH:198px;
+  HEIGHT:198px;
+  OVERFLOW:hidden;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item {
+  WIDTH:198px;
+  HEIGHT:198px;
+  POSITION:relative
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P {
+  MARGIN:0px;
+  PADDING:0px;
+  CURSOR:default
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.image {
+  TEXT-ALIGN:center
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.title {
+  POSITION:absolute;
+  TOP:0px;
+  LEFT:20px;
+  LINE-HEIGHT:16px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.countdown {
+  POSITION:absolute;
+  TOP:16px;
+  LEFT:20px;
+  LINE-HEIGHT:16px;
+  BACKGROUND:url(../../images/bg.icon.2.gif) -10px -200px no-repeat;
+  PADDING-LEFT:14px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.countdown EM {
+  FONT-SIZE:10px;
+  FONT-WEIGHT:bold;
+  FONT-STYLE:normal;
+  COLOR:#ec6f00;
+  PADDING-LEFT:2px;
+  PADDING-RIGHT:2px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.price {
+  POSITION:absolute;
+  BOTTOM:10px;
+  LEFT:10px;
+  LINE-HEIGHT:16px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.price EM {
+  FONT-STYLE:normal;
+  FONT-SIZE:14px;
+  COLOR:#999;
+  TEXT-DECORATION:line-through
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.group_price {
+  WIDTH:140px;
+  HEIGHT:32px;
+  BACKGROUND:url(../../images/bg.tag.1.png) !important;
+  BACKGROUND:url(../../images/bg.tag.1.gif);
+  POSITION:absolute;
+  BOTTOM:10px;
+  RIGHT:0px
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.group_price A {
+  DISPLAY:block;
+  PADDING-LEFT:25px;
+  LINE-HEIGHT:32px;
+  FONT-SIZE:14px;
+  COLOR:#fff
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.group_price A:hover {
+  TEXT-DECORATION:none
+}
+.pv_shop_category_main_rightbox_group_purchase_list_item P.group_price A EM {
+  FONT-STYLE:normal;
+  FONT-SIZE:16px
+}
+.pv_shop_category_main_rightbox_group_purchase_control {
+  POSITION:absolute;
+  TOP:8px;
+  RIGHT:8px;
+  Z-INDEX:1000
+}
+.pv_shop_category_combination {
+  WIDTH:100%
+}
+.pv_shop_category_combination_box {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_combination_box_content {
+  WIDTH:900px;
+  MARGIN-TOP:10px;
+  FLOAT:right;
+  DISPLAY:inline;
+  POSITION:relative
+}
+.pv_shop_category_combination_box_content DIV.shadow {
+  WIDTH:13px;
+  HEIGHT:267px;
+  BACKGROUND:url(../../images/shop/bg.combination.shadow.jpg);
+  POSITION:absolute;
+  BOTTOM:0px;
+  RIGHT:899px
+}
+.pv_shop_category_combination_box_content_list {
+  WIDTH:895px;
+  PADDING-LEFT:4px;
+  BORDER-LEFT:#d7d7d7 1px solid;
+  DISPLAY:none
+}
+.pv_shop_category_combination_box_content_list DIV.item1 {
+  PADDING-LEFT:24px;
+  PADDING-RIGHT:24px
+}
+.pv_shop_category_combination_box_content_list DIV.special {
+  POSITION:absolute;
+  TOP:10px;
+  RIGHT:925px;
+  Z-INDEX:1000
+}
+.pv_shop_category_combination_box_content_list DIV.special IMG {
+  WIDTH:160px;
+  HEIGHT:250px
+}
+.pv_shop_category_periodical {
+  WIDTH:100%
+}
+.pv_shop_category_periodical_box {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_periodical_list {
+  WIDTH:265px;
+  HEIGHT:340px;
+  MARGIN:10px;
+  0px 10px 20px;
+  FLOAT:left;
+  DISPLAY:inline;
+  BACKGROUND:url(../../images/shop/bg.periodical.left.jpg)
+}
+.pv_shop_category_periodical_list UL {
+  PADDING:5px 0px 5px 5px;
+  ZOOM:1
+}
+.pv_shop_category_periodical_list LI {
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_periodical_list LI SPAN {
+  DISPLAY:block;
+  WIDTH:82px;
+  HEIGHT:82px;
+  POSITION:relative
+}
+.pv_shop_category_periodical_list LI SPAN IMG {
+  WIDTH:80px;
+  HEIGHT:80px;
+  BORDER:#f1f1f1 2px solid
+}
+.pv_shop_category_periodical_list LI SPAN.on {
+  Z-INDEX:1000
+}
+.pv_shop_category_periodical_list LI SPAN.on IMG {
+  BORDER:#239cdc 2px solid
+}
+.pv_shop_category_periodical_right {
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_periodical_content {
+  WIDTH:780px;
+  HEIGHT:320px;
+  MARGIN:9px;
+  0px 9px 0px;
+  PADDING:10px;
+  BORDER:#d7d7d7 1px solid;
+  DISPLAY:none
+}
+.pv_shop_category_periodical_content DIV.picture {
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_periodical_content DIV.picture IMG {
+  WIDTH:320px;
+  HEIGHT:320px
+}
+.pv_shop_category_periodical_content DIV.info {
+  FLOAT:left;
+  DISPLAY:inline;
+  PADDING:35px;
+  WIDTH:380px
+}
+.pv_shop_category_new {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_new_box {
+  WIDTH:100%;
+  PADDING:0px
+}
+.pv_shop_category_new_box_content {
+  WIDTH:100%;
+  BORDER-TOP:#d7d7d7 1px solid;
+  POSITION:relative
+}
+.pv_shop_category_new_box_content DIV.tab3 {
+  POSITION:absolute;
+  TOP:-29px;
+  RIGHT:0px
+}
+.pv_shop_category_new_box_content DIV.tab3 UL {
+  FLOAT:right
+}
+.pv_shop_category_new_box_content_list {
+  PADDING-LEFT:10px;
+  PADDING-TOP:10px;
+  DISPLAY:none
+}
+.pv_shop_category_new_box_content_list DIV.item1 {
+  PADDING-LEFT:25px;
+  PADDING-RIGHT:25px
+}
+.pv_shop_category_brand {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_brand_box {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_brand_box_content_tab {
+  WIDTH:136px;
+  FLOAT:right;
+  DISPLAY:inline;
+  MARGIN-TOP:-1px
+}
+.pv_shop_category_brand_box_content_tab UL {
+  ZOOM:1
+}
+.pv_shop_category_brand_box_content_tab LI {
+  BORDER:#d7d7d7 1px solid;
+  BORDER-BOTTOM:0px;
+  BORDER-RIGHT:0px
+}
+.pv_shop_category_brand_box_content_tab LI SPAN {
+  DISPLAY:block;
+  POSITION:relative;
+  Z-INDEX:100
+}
+.pv_shop_category_brand_box_content_tab LI SPAN P.arrow {
+  DISPLAY:none
+}
+.pv_shop_category_brand_box_content_tab LI SPAN IMG {
+  WIDTH:110px;
+  HEIGHT:41px;
+  PADDING:10px 12px
+}
+.pv_shop_category_brand_box_content_tab LI SPAN.on {
+  MARGIN:-1px;
+  BORDER:#239cdc 1px solid
+}
+.pv_shop_category_brand_box_content_tab LI SPAN.on P.arrow {
+  MARGIN:0px;
+  PADDING:0px;
+  WIDTH:3px;
+  HEIGHT:5px;
+  DISPLAY:block;
+  FONT-SIZE:2px;
+  BACKGROUND:url(../../images/bg.icon.1.gif) -6px -149px;
+  POSITION:absolute;
+  TOP:25px;
+  LEFT:-4px;
+  Z-INDEX:1000
+}
+.pv_shop_category_brand_box_content_left {
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_brand_box_content_list {
+  WIDTH:972px;
+  DISPLAY:none
+}
+.pv_shop_category_brand_box_content_list DIV.item1 {
+  WIDTH:140px;
+  PADDING-LEFT:25px;
+  PADDING-RIGHT:25px
+}
+.pv_shop_category_brand_box_content_list DIV.item1 DIV.item1_box {
+  WIDTH:130px;
+  PADDING:5px;
+  BORDER:#fff 1px solid
+}
+.pv_shop_category_brand_box_content_list DIV.item1 P.image {
+  PADDING-TOP:20px
+}
+.pv_shop_category_brand_box_content_list DIV.item1_on H3 {
+  WIDTH:142px;
+  BACKGROUND:#39a6df;
+  COLOR:#fff
+}
+.pv_shop_category_brand_box_content_list DIV.item1_on DIV.item1_box {
+  BORDER-COLOR:#39a6df
+}
+.pv_shop_category_brand_box_content_list DIV.item1b {
+  WIDTH:160px;
+  PADDING-LEFT:25px;
+  PADDING-RIGHT:15px;
+  PADDING-TOP:20px
+}
+.pv_shop_category_special {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_special_box {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_special_tab {
+  WIDTH:180px;
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_special_tab UL {
+  MARGIN-BOTTOM:-1px
+}
+.pv_shop_category_special_tab UL LI SPAN {
+  DISPLAY:block;
+  TEXT-ALIGN:center;
+  HEIGHT:44px;
+  LINE-HEIGHT:44px;
+  BORDER-BOTTOM:#d7d7d7 1px solid;
+  BACKGROUND:url(../../images/shop/bg.special_tab.1.gif) #f4f4f4 right top repeat-y
+}
+.pv_shop_category_special_tab UL LI SPAN.on {
+  BACKGROUND:#fff;
+  FONT-WEIGHT:bold
+}
+.pv_shop_category_special_tab_list {
+  WIDTH:928px;
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_special_list {
+  PADDING-TOP:16px;
+  PADDING-LEFT:16px;
+  DISPLAY:none
+}
+.pv_shop_category_special_list DIV.item1 {
+  PADDING-LEFT:25px;
+  PADDING-RIGHT:25px
+}
+.pv_shop_category_rank {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_rank_box {
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_rank_item {
+  WIDTH:331px;
+  PADDING:15px;
+  FLOAT:left;
+  DISPLAY:inline;
+  BORDER:#fff 4px solid
+}
+.pv_shop_category_rank_item_on {
+  BORDER-COLOR:#f1f1f1
+}
+.pv_shop_category_rank_item DIV.picture {
+  WIDTH:160px;
+  FLOAT:left;
+  DISPLAY:inline;
+  POSITION:relative
+}
+.pv_shop_category_installment {
+  POSITION:relative;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_installment DIV.h2 {
+  PADDING:0px 10px 0px 10px
+}
+.pv_shop_category_installment DIV.h2 H2 {
+  PADDING-TOP:10px;
+  PADDING-LEFT:5px;
+  BORDER-BOTTOM:#d7d7d7 1px solid
+}
+.pv_shop_category_installment_box {
+  WIDTH:100%;
+  POSITION:relative
+}
+.pv_shop_category_installment_box DIV.tab3 {
+  POSITION:absolute;
+  TOP:-29px;
+  RIGHT:10px
+}
+.pv_shop_category_installment_box DIV.tab3 UL {
+  FLOAT:right
+}
+.pv_shop_category_installment_box_list {
+  PADDING-LEFT:10px;
+  PADDING-TOP:10px;
+  DISPLAY:none
+}
+.pv_shop_category_installment_box_list DIV.ad1 {
+  FLOAT:left;
+  DISPLAY:inline;
+  PADDING-LEFT:30px;
+  PADDING-TOP:10px
+}
+.pv_shop_category_journal {
+  WIDTH:100%
+}
+.pv_shop_category_journal_box {
+  POSITION:relative;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_journal_box DIV.left_box {
+  WIDTH:199px;
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_journal_box DIV.left_box DIV.picture {
+  PADDING:9px 0px 9px 9px
+}
+.pv_shop_category_journal_box DIV.left_box DIV.picture IMG {
+  WIDTH:190px
+}
+.pv_shop_category_journal_box DIV.right_box {
+  WIDTH:909px;
+  FLOAT:right;
+  DISPLAY:inline
+}
+.pv_shop_category_journal_box DIV.item_list_1 {
+  WIDTH:882px;
+  MARGIN:9px auto 10px auto;
+  BORDER:#f4f4f4 4px solid
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item {
+  FLOAT:left;
+  DISPLAY:inline;
+  WIDTH:294px
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item DIV.info {
+  PADDING-LEFT:28px
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item DIV.info P {
+  _POSITION:static;
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item DIV.info P.price {
+  PADDING-TOP:10px
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item DIV.picture {
+  WIDTH:90px;
+  FLOAT:right;
+  DISPLAY:inline;
+  PADDING:10px 28px 0px 0px
+}
+.pv_shop_category_journal_box DIV.item_list_1 DIV.item DIV.corner_icon1 {
+  _POSITION:static;
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item {
+  FLOAT:left;
+  DISPLAY:inline;
+  WIDTH:210px;
+  MARGIN:10px 0px 0px 0px;
+  PADDING-LEFT:10px
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.info {
+  WIDTH:120px;
+  PADDING:0px 0px 0px 10px
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.info P {
+  _POSITION:static;
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.info P.price {
+  PADDING-TOP:8px
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.picture {
+  WIDTH:80px;
+  FLOAT:left;
+  DISPLAY:inline;
+  PADDING:0px
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.picture IMG {
+  WIDTH:78px;
+  HEIGHT:78px;
+  BORDER:#cccccc 1px solid
+}
+.pv_shop_category_journal_box DIV.item_list_2 DIV.item DIV.corner_icon1 {
+  _POSITION:static;
+}
+.pv_shop_category_hotreview {
+  WIDTH:100%
+}
+.pv_shop_category_hotreview_box {
+  POSITION:relative;
+  BORDER:#d7d7d7 1px solid
+}
+.pv_shop_category_hotreview_box DIV.review {
+  WIDTH:158px;
+  PADDING:10px 0px;
+  FLOAT:left;
+  DISPLAY:inline
+}
+.pv_shop_category_hotreview_box DIV.review P {
+  MARGIN:0px;
+  PADDING:0px
+}
+.pv_shop_category_hotreview_box DIV.review P.image {
+  WIDTH:100%;
+  TEXT-ALIGN:center
+}
+.pv_shop_category_hotreview_box DIV.review P.star {
+  WIDTH:64px;
+  MARGIN:5px auto 5px auto;
+  PADDING:0px
+}
+.pv_shop_category_hotreview_box DIV.review P.star SPAN {
+  DISPLAY:block;
+  WIDTH:64px;
+  HEIGHT:14px;
+  BACKGROUND:url(../../images/bg.star.1.1.gif) left center no-repeat
+}
+.pv_shop_category_hotreview_box DIV.review P.star SPAN  EM {
+  DISPLAY:block;
+  HEIGHT:14px;
+  BACKGROUND:url(../../images/bg.star.1.2.gif) left center no-repeat
+}
+.pv_shop_category_hotreview_box DIV.review P.count {
+  WIDTH:100%;
+  TEXT-ALIGN:center
+}
+.pv_shop_category_hotreview_box DIV.review P.count A {
+  COLOR:#239cdc
+}
+.pv_shop_category_ad_five {
+  BACKGROUND:#fafafa;
+  PADDING:10px 0px 10px 0px
+}
+.pv_shop_category_ad_five LI {
+  FLOAT:left;
+  DISPLAY:inline;
+  PADDING-LEFT:10px
+}
+.pv_shop_category_ad_five LI IMG {
+  WIDTH:210px;
+  HEIGHT:140px
+}
+.shop_category_event_banner {
+  position:relative;
+  width:1110px;
+  height:auto;
+  display:none;
+  margin:0 auto;
+}
+.shop_category_event_banner.on {
+  position:relative;
+  width:1110px;
+  height:auto;
+  display:block;
+}

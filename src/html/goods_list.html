@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+<title>东方购物</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../css/global-v4.css" />
+<link rel="stylesheet" type="text/css" href="../css/goods_list.css" />
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/common_1.js"></script>
+<script type="text/javascript" src="../js/unslider.min.js"></script>
+</head>
+<body>
+<div id="header" style="height: 137px;">
+<!-- 头部信息 -->
+<div id="header-t">
+<div class="header-t con">
+<!-- 头部左 -->
+    <div class="header-t-l fl">
+            <span class="l-welcome">欢迎光临 OCJ.COM.CN</span>
+            <span class="l-normal"><a id="denglu" href="denglu.html">登录</a></span>
+            <span class="l-normal" id="tuichubb"><a href="sign_in.html">注册</a></span>
+            <span class="l-normal">送货至:</span>
+            <div class="l-area">
+                <dl>
+                    <dt>
+                        <img src="../images/r-area1.png" height="15" width="14"/>
+                        <span class="g-cur-area" id="g-cur-area"><b class="lb">广州</b></span> 
+                        <a href="#" class="change" id="change-areay">[更换]</a>
+                    </dt>
+                </dl>
+            </div>
+    </div>
+    <!--用户信息-->
+        <div class="header-t-r">
+            <div class="r-weixin fr">
+                <dl>
+                    <dt>
+                        <span><img src="../images/topimg5.png"></span> 
+                        <b>微信</b> 
+                    </dt>
+                    <div class="r-weixin-pic">
+                        <p class="r-weixin-txt1">扫一扫，关注我们</p>
+                        <img src="../images/1_20170904091940_98.jpg" alt="东方购物" style="width: 222px;height: 222px;">
+                        <p class="r-weixin-txt2">
+                            微信服务号：OCJ_FW<br><font color="#A30000">关注并绑定账户送5元积分哟</font>
+                        </p>
+                    </div>
+                </dl>
+            </div>
+            <!-- TV版 -->
+            <span class="r-tv fr"><span class=""><img src="../images/r-areaTV.png" height="14" width="16" alt="" /></span><a href="http://www.ocj.com.cn/staticPage/tvShow.jsp">TV版</a></span>
+            <!-- 移动版 -->
+            <span class="r-phone fr">
+                <span class=""><img src="../images/r-phone.png" height="14" width="14" alt="" /></span><a href="http://www.ocj.com.cn/app_web/index_app">移动版</a>
+            </span> 
+            <!-- 顾客中心 -->
+            <span class="r-guest-center fr">
+                <span class=""><img src="../images/r-areaPepo.png" height="15" width="14" alt="" /></span><a href="http://www.ocj.com.cn/help/index">顾客中心</a>
+            </span>
+            <!-- 我的购物 -->
+            <div class="r-myocj">
+                <dl class="">
+                    <dt> 
+                        <span class=""><img src="../images/r-areaPepo2.png" height="15" width="14" alt="" /></span>
+                        <b><a href="javascript:myocjhref(&#39;https://www.ocj.com.cn/myocj/orders&#39;);">我的购物</a></b> 
+                        <span class=""><img src="../images/r-area2.png" height="5" width="8" alt="" /></span>
+                    </dt>
+                    <dd>
+                        <div class="r-myocj-more">
+                            <ul>
+                                <li><a href="#">订单查询</a></li>
+                                <li><a href="#">积分查询</a></li>
+                                <li><a href="#">抵用券查询</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">修改信息</a></li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+    </div>
+</div>
+</div>
+<!-- 右侧功能栏 --> 
+    <div class="olympicSidebarWrap" style="background-color: #c7c5eb;"> 
+        <div class="g-side-bar-t"></div>
+        <div class="rightFixNavButton">
+         
+                <div class="rightFixNavButtonLink">
+                        <a href="#" >
+                            食品饮料
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="#" >
+                            家居厨房
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="#">
+                            3C家电
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="#">
+                            时尚服饰
+                        </a>
+                </div>
+        </div>
+        <div class="server">
+            <div class="bird"><a href="#">东东客服</a></div>
+            <div class="g-go-top">返回顶部</div>
+        </div>
+    </div>
+    <!-- 头部-下 --> 
+    <div class="header-b con">
+     <!-- 购物车右边logo -->
+    <!-- 非TV LOGO -->
+    <div class="header-b-logo fl">
+         <a href="../index.html"> <!-- 根据c_code 显示不同的LOGO -->       
+            <img src="../images/cplogo0.png">       
+        </a>  
+        <a href="#" class="g-main-logo">
+        </a>   
+    </div>
+   
+  <!-- 样式，简单头长搜索框 -->
+<div class="g-search-box">
+    <div class="search-bar">
+        <form name="search_form" id="search_form" onsubmit="return false">
+            <input id="title_srch" type="text" class="keyword" name="keyword" placeholder="" autocomplete="off" size="20" maxlength="20"><button id="tilte_submit">搜索</button>
+        </form>
+    
+        <div class="relation-search" id="topsearch_tips" style="display:none"></div>
+    </div>
+    <div class="search-down">
+     <span class="g-hotlist"><a href="http://www.ocj.com.cn/catalog/rank">销售排行榜</a></span> 
+        <!-- 搜索框下边的推荐 -->
+        <ul class="keywords">
+                    <li>
+                        <a href="#">
+                        <font color="护肤">护肤狂欢</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="厨具">厨房狂欢</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="暖冬大作战">暖冬大作战</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="家电">家电盘点</font> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="服饰">时尚盛典</font>                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="金饰品">璀璨珠宝</font>        
+                        </a>
+                    </li>
+        </ul>     
+    </div>
+</div>
+    <!-- 头部-下-购物车 -->
+    <div class="g-header-mycart fl" id="g-header-mycart">
+        <dl id="g-header-mycart-dl">
+            <dt class="ld fr">
+                
+                <span id="shopping">0</span>
+                <a href="#" id="settleup-url"><s></s>购物车<span></span></a>
+            </dt>
+            <dd>      
+                <div class="g-cart-empty">
+                    <p>购物车中还没有商品，赶紧选购吧！</p>
+                </div>
+
+            </dd> 
+        </dl>
+    </div>  
+    <!-- 购物车右边logo -->
+     <div class="headerCompLogoRight fr">
+        <a href="#">
+            <img src="../images/1_20180328193915_54.jpg" alt="东方购物">
+        </a>
+    </div>
+    
+</div> 
+</div>
+<!-- 菜单 -->
+<div class="g-header-menu">
+  <div class="g-container-1190 clear_float con">
+    <a class="g-header-tab g-all" href="goods_list.html" target="_blank">全部商品分类<!-- <b class="icon-arrow-down9"></b> --></a>
+    <a class="g-header-tab cur" href="../index.html" title="首页">首页</a>
+    <a class="g-header-tab" href="#" title="TV购物">TV购物</a>
+    <a class="g-header-tab" href="#" title="团购">团购 </a>
+    <a class="g-header-tab  g-global " href="#" title="全球购">全球购</a>
+ 
+        <a id="shangchengMenu" class="g-header-tab" href="#">商城<!-- <span>新</span> --></a>
+   
+    <a class="g-header-tab" href="#">特惠活动</a>
+    
+    <a class="g-header-tab" href="#" title="会员俱乐部">会员俱乐部</a>
+    <a class="g-header-tab" href="#" title="企业官网">企业官网</a>
+  </div>
+</div>
+<!-- 商品列表 -->
+<!-- 商品列表-顶部首页 -->
+  <div id="nav">
+  <div id="navContent" class="con">
+    <p>
+      <a href="http://www.ocj.com.cn/">首页</a><em>&nbsp;&gt;&nbsp;</em><label>厨房用品、厨房电器</label>
+    </p>
+  </div>
+  </div>
+  <!-- 商品列表-厨房用品头部 -->
+<div id="catalogue">
+<div class="catalogue con">
+  <div class="pv_shop_category_title">
+        <h1>
+          <img src="../images/category1_ttt_3521.gif" alt="-厨房用品、厨房电器">
+        </h1>
+        
+  <div class="search_words">
+    <ul>
+  
+      <li><a href="http://www.ocj.com.cn/search/results?search_item=%E5%8E%9F%E6%B1%81%E6%9C%BA&amp;mgroup=&amp;promotions=&amp;tvname=&amp;search_name=">原汁机</a></li>
+  
+      <li><a href="http://www.ocj.com.cn/search/results?search_item=%E5%8E%8B%E5%8A%9B%E9%94%85&amp;mgroup=&amp;promotions=&amp;tvname=&amp;search_name=">压力锅</a></li>
+  
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- 商品列表-厨房商品列表 -->
+<div id="goods_layer">
+  <div class="layer con">
+  <div class="pv_shop_category_main">
+    <div class="pv_shop_category_main_submenu" mark="submenu" submenu_node="dl" submenu_subnode="ul" init="done" submenu_index="0">
+      <dl submenu_subnode_index="0">
+        <dt>厨房电器</dt>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/244">榨汁/搅拌</a></span>
+        </dd>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/247">电饭煲</a></span>
+        </dd>
+        <ul>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/244">榨汁/搅拌</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/247">电饭煲</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/636">煮蛋器</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/245">咖啡机</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/254">电压力煲</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/251">电水壶 /电水瓶</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/606">抽油烟机/灶具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/10363">碗筷消毒</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/250">微波炉/烤箱</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/249">电磁炉</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/257">面包机/多士炉</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/4703">电饼铛/烧烤盘</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/248">电炖/电蒸锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/246">豆浆机</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/637">酸奶机</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/4862">DIY小家电</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/13297">食物垃圾处理器</a></li>
+        </ul>
+      </dl>
+      <dl submenu_subnode_index="1">
+        <dt>厨房用品</dt>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/281">炒锅</a></span>
+        </dd>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/282">煎锅/平底锅</a></span>
+        </dd>
+        <ul>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/281">炒锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/282">煎锅/平底锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/665">汤/奶锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/3401">煮锅/炖锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/284">套锅</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/944">厨盆水槽</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/277">刀具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/278">砧板</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/666">厨房用具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/667">厨房收纳</a></li>
+        </ul>
+      </dl>
+      <dl submenu_subnode_index="2">
+        <dt>餐具容器</dt>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/679">保温杯</a></span>
+        </dd>
+        <dd>
+          <span>
+            <a href="http://www.ocj.com.cn/catalog/3521/680">保温盒/壶</a></span>
+        </dd>
+        <ul style="display: none;">
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/679">保温杯</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/680">保温盒/壶</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/677">水/茶具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/675">餐具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/676">保鲜容器</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/678">酒具</a></li>
+          <li>
+            <a href="http://www.ocj.com.cn/catalog/3521/681">果盘</a></li>
+        </ul>
+      </dl>
+      <!-- 热门搜索 -->
+      <div class="hot_list">
+        <h2>热门搜索</h2>
+        <div class="hot_list_box">
+          <ul class="clear_float how_clear_float">
+            <!-- js渲染热销商品 -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pv_shop_category_main_rightbox">
+      <div class="layer_inner">
+        <div class="pv_shop_category_main_rightbox_bigeyes bigeyes1" mark="bigeyes" bigeyes_data="套锅$:::$https://cdnimg.ocj.com.cn/image_site/shop/conts/3521/21/181/339/1_20171229155927_77.jpg$:::$http://www.ocj.com.cn/catalog/3521/284$:::$_self$|||$保温杯$:::$https://cdnimg.ocj.com.cn/image_site/shop/conts/3521/21/181/339/3_20171229160013_83.jpg$:::$http://www.ocj.com.cn/catalog/3521/679$:::$_self$|||$康宁专场$:::$https://cdnimg.ocj.com.cn/image_site/shop/conts/3521/21/181/339/4_20180424102119_1.jpg$:::$http://www.ocj.com.cn/event/G/10971$:::$_self$|||$米技$:::$https://cdnimg.ocj.com.cn/image_site/shop/conts/3521/21/181/339/2_20151223105637_81.jpg$:::$http://www.ocj.com.cn/brands/detail/0039600$:::$_self$|||$老板$:::$https://cdnimg.ocj.com.cn/image_site/shop/conts/3521/21/181/339/5_20151223105851_41.jpg$:::$http://www.ocj.com.cn/brands/detail/0172400$:::$_self" init="done" bigeyes_i="1" bigeyes_index="0">
+          <div class="image">
+            <a href="http://www.ocj.com.cn/catalog/3521/679" title="保温杯" target="_self">
+              <img src="../images/3_20171229160013_83.jpg" alt="保温杯"></a>
+          </div>
+          <div class="prev" mark="hover" hover_class="prev_on" style="display: none;">
+            <span></span>
+          </div>
+          <div class="next" mark="hover" hover_class="next_on" style="display: none;">
+            <span></span>
+          </div>
+        </div>
+        <!--广告大图 右侧区域2 开始-->
+        <div class="pv_shop_category_main_rightbox_propose">
+          <div class="pv_shop_category_main_rightbox_propose_box">
+            <div class="pv_shop_category_main_rightbox_propose_box_list switch1" mark="switch" init="done" switch_index="0">
+              <div class="pv_shop_category_main_rightbox_propose_box_list_box">
+                <div class="pv_shop_category_main_rightbox_propose_box_list_content">
+                  <div class="window" style="width: 396px;">
+                    <div class="window_1" style="width: 198px;">
+                      <div class="item">
+                        <a href="http://www.ocj.com.cn/catalog/3521/675">
+                          <img src="../images/1_20171229160346_69.jpg" alt="餐具"></a>
+                      </div>
+                    </div>
+                    <div class="window_2" style="width: 198px;">
+                      <div class="item">
+                        <a href="http://www.ocj.com.cn/catalog/3521/675">
+                          <img src="../images/1_20171229160346_69.jpg" alt="餐具"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item_list">
+                    <div class="item">
+                      <a href="http://www.ocj.com.cn/catalog/3521/675">
+                        <img src="../images/1_20171229160346_69.jpg" alt="餐具"></a>
+                    </div>
+                    <div class="item">
+                      <a href="http://www.ocj.com.cn/brands/detail/0015700">
+                        <img src="../images/2_20180209142430_44.jpg" alt="双立人"></a>
+                    </div>
+                  </div>
+                </div>
+                <span class="count">
+                  <em>1</em>/
+                  <b>2</b>
+                </span>
+                <div class="prev" mark="hover" hover_class="prev_on">
+                  <span></span>
+                </div>
+                <div class="next" mark="hover" hover_class="next_on">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pv_shop_category_main_rightbox_propose_pic">
+            <a href="http://www.ocj.com.cn/catalog/3521/676">
+              <img src="../images/1_20171229160437_92.jpg" alt="保鲜容器"></a>
+          </div>
+        </div>
+        <!--广告大图 右侧区域2 结束-->
+        <div class="clear"></div>
+      </div>
+      <div class="layer_inner">
+        <!--品牌旗舰店 开始-->
+        <div class="pv_shop_category_main_rightbox_brand_flagship">
+          <div class="h2">
+            <h2>
+              <img src="../images/ppqjd.gif"></h2>
+          </div>
+          <div class="pv_shop_category_main_rightbox_brand_flagship_list">
+            <div class="big">
+              <a href="http://www.ocj.com.cn/brands/detail/0003200">
+                <img src="../images/1_20151224165325_52.jpg" alt="双立人"></a>
+            </div>
+            <div class="small">
+              <div class="one">
+                <a href="http://www.ocj.com.cn/brands/detail/0039600">
+                  <img src="../images/1_20151224163230_50.jpg" alt="米技"></a>
+                <span>米技</span></div>
+              <div class="two">
+                <a href="http://www.ocj.com.cn/brands/detail/0030700">
+                  <img src="../images/1_20151224163205_81.jpg" alt="虎牌"></a>
+                <span>虎牌</span></div>
+            </div>
+            <div class="big">
+              <a href="http://www.ocj.com.cn/brands/detail/0172400">
+                <img src="../images/1_20151224165348_20.jpg" alt="" 老板=""></a>
+            </div>
+            <div class="small">
+              <div class="one">
+                <a href="http://www.ocj.com.cn/brands/detail/0218900">
+                  <img src="../images/1_20140619184925_67.jpg" alt="SIMELO"></a>
+                <span>SIMELO</span></div>
+              <div class="two">
+                <a href="http://www.ocj.com.cn/brands/detail/0053900">
+                  <img src="../images/1_20151224163255_48.jpg" alt="coren"></a>
+                <span>coren</span></div>
+            </div>
+            <div class="big">
+              <a href="http://www.ocj.com.cn/brands/detail/0229300">
+                <img src="../images/1_20151224165415_42.jpg" alt="乐扣乐扣"></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!--品牌旗舰店 结束-->
+        <!-- 超值团购 或者 小型策划展3 开始 -->
+        <div class="pv_shop_category_main_rightbox_ad">
+          <a href="http://www.ocj.com.cn/catalog/3521/4862">
+            <img src="../images/1_20151123112136_82.jpg" alt="DIY小家电"></a>
+        </div>
+        <!-- 超值团购 或者 小型策划展3 结束 -->
+        <div class="clear"></div>
+      </div>
+</div>
+</div>
+<!-- 热卖推荐 开始 -->
+<div class="layer_inner_hor fr">
+  <div class="pv_shop_category_main_rightbox_hot">
+    <div class="tab1" mark="tab" tab_timeout="8000" init="done">
+      <ul class="clear_float" related="pv_shop_category_main_rightbox_hot_list">
+        <li tab_i="0">
+          <span class="">畅销冠军</span></li>
+        <li tab_i="1">
+          <span class="on">厨房用具</span></li>
+        <li tab_i="2">
+          <span>厨房电器</span></li>
+      </ul>
+    </div>
+    <div id="pv_shop_category_main_rightbox_hot_list_0" class="pv_shop_category_main_rightbox_hot_list" style="display: none;">
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/7107852014" title="ZOJIRUSHI/象印 日本全自动面包机 蛋糕 曲奇 果酱 BB-HAH10C  ">
+              <img class="adaptive" src="../images/710785S.jpg" alt="冬就这样美,ZOJIRUSHI/象印 日本全自动面包机 蛋糕 曲奇 果酱 BB-HAH10C " title="冬就这样美,ZOJIRUSHI/象印 日本全自动面包机 蛋糕 曲奇 果酱 BB-HAH10C " onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/7107852014" title="ZOJIRUSHI/象印 日本全自动面包机 蛋糕 曲奇 果酱 BB-HAH10C ">
+            <font color="#239CDC">
+              <b>[冬就这样美]</b>
+            </font>ZOJIRUSHI/象印 日本全自动面包机 蛋</a>
+        </p>
+        <p class="price">
+          <span class="original">
+            <del>￥3,218</del></span>￥
+          <em>1,999</em></p>
+        <p class="icon">
+          <span class="credit">19.99</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15177368" title="双立人（ZWILLING） Nova 30cm炒锅14件全套套装 ">
+              <img class="adaptive" src="../images/15177368S.jpg" alt="年末厨房狂欢,双立人（ZWILLING） Nova 30cm炒锅14件全套套装" title="年末厨房狂欢,双立人（ZWILLING） Nova 30cm炒锅14件全套套装" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15177368" title="双立人（ZWILLING） Nova 30cm炒锅14件全套套装">
+            <font color="#239CDC">
+              <b>[年末厨房狂欢]</b>
+            </font>双立人（ZWILLING） Nova 30c</a>
+        </p>
+        <p class="price">
+          <span class="original">
+            <del>￥2,298</del></span>￥
+          <em>2,098</em></p>
+        <p class="icon">
+          <span class="credit">20.98</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15098252" title="格兰仕（Galanz） 23升智能微波/光波炉G80F23CN3L-C2（R1）（加赠煮流派） ">
+              <img class="adaptive" src="../images/15098252S.jpg" alt="年末厨房狂欢,格兰仕（Galanz） 23升智能微波/光波炉G80F23CN3L-C2（R1）（加赠煮流派）" title="年末厨房狂欢,格兰仕（Galanz） 23升智能微波/光波炉G80F23CN3L-C2（R1）（加赠煮流派）" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+          <p class="icon_group_1">
+            <b class="icon icon_best_b"></b>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15098252" title="格兰仕（Galanz） 23升智能微波/光波炉G80F23CN3L-C2（R1）（加赠煮流派）">
+            <font color="#239CDC">
+              <b>[年末厨房狂欢]</b>
+            </font>格兰仕（Galanz） 23升智能微波/光波</a>
+        </p>
+        <p class="price">
+          <span class="original">
+            <del>￥799</del></span>￥
+          <em>698</em></p>
+        <p class="icon"></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/7637402015" title="象印/ZOJIRUSHI CD-LCQ50HC 象印电热水瓶 日本原装进口 5L ">
+              <img class="adaptive" src="../images/763740S.jpg" alt="象印/ZOJIRUSHI CD-LCQ50HC 象印电热水瓶 日本原装进口 5L" title="象印/ZOJIRUSHI CD-LCQ50HC 象印电热水瓶 日本原装进口 5L" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/7637402015" title="象印/ZOJIRUSHI CD-LCQ50HC 象印电热水瓶 日本原装进口 5L" style="word-wrap: break-word;word-break: break-all;">象印/ZOJIRUSHI CD-LCQ50HC 象印电热水瓶</a></p>
+        <p class="price">￥
+          <em>2,099</em></p>
+        <p class="icon">
+          <span class="credit">20.99</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/7990912015" title="百露 4层夹缝抽屉式多功能置物架带滚轮 ">
+              <img class="adaptive" src="../images/799091S.jpg" alt="百露 4层夹缝抽屉式多功能置物架带滚轮" title="百露 4层夹缝抽屉式多功能置物架带滚轮" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/7990912015" title="百露 4层夹缝抽屉式多功能置物架带滚轮" style="word-wrap: break-word;word-break: break-all;">百露 4层夹缝抽屉式多功能置物架带滚轮</a></p>
+        <p class="price">￥
+          <em>338</em></p>
+        <p class="icon">
+          <span class="credit">3.38</span></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="pv_shop_category_main_rightbox_hot_list_1" class="pv_shop_category_main_rightbox_hot_list" style="display: block;">
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15196168" title="珍珠生活（PEARL LIFE）  GP-32原装进口凹凸工艺高纯铁炒锅30cm厨房套组 ">
+              <img class="adaptive" src="../images/15196168S.jpg" alt="爆款,珍珠生活（PEARL LIFE）  GP-32原装进口凹凸工艺高纯铁炒锅30cm厨房套组" title="爆款,珍珠生活（PEARL LIFE）  GP-32原装进口凹凸工艺高纯铁炒锅30cm厨房套组" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+          <p class="icon_group_1">
+            <b class="icon icon_best_b"></b>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15196168" title="珍珠生活（PEARL LIFE）  GP-32原装进口凹凸工艺高纯铁炒锅30cm厨房套组">
+            <font color="#239CDC">
+              <b>[爆款]</b>
+            </font>珍珠生活（PEARL LIFE） GP-32原装进</a>
+        </p>
+        <p class="price">
+          <span class="original">
+            <del>￥1,899</del></span>￥
+          <em>699</em></p>
+        <p class="icon">
+          <span class="credit">6.99</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/3618612013" title="【电视团购】双立人TWIN Point鸿运当头刀具促销装 ">
+              <img class="adaptive" src="../images/361861S.jpg" alt="【电视团购】双立人TWIN Point鸿运当头刀具促销装" title="【电视团购】双立人TWIN Point鸿运当头刀具促销装" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+          <p class="icon_group_1">
+            <b class="icon icon_best_b"></b>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/3618612013" title="【电视团购】双立人TWIN Point鸿运当头刀具促销装" style="word-wrap: break-word;word-break: break-all;">【电视团购】双立人TWIN Point鸿运当头刀具促销装</a></p>
+        <p class="price">￥
+          <em>799</em></p>
+        <p class="icon">
+          <span class="credit">7.99</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15088887" title="拜格 不锈钢料理盆五件套（方便制作各类凉拌调味冷盘） ">
+              <img class="adaptive" src="../images/15088887S.jpg" alt="拜格 不锈钢料理盆五件套（方便制作各类凉拌调味冷盘）" title="拜格 不锈钢料理盆五件套（方便制作各类凉拌调味冷盘）" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15088887" title="拜格 不锈钢料理盆五件套（方便制作各类凉拌调味冷盘）" style="word-wrap: break-word;word-break: break-all;">拜格 不锈钢料理盆五件套（方便制作各类凉拌调味冷盘）</a></p>
+        <p class="price">￥
+          <em>159</em></p>
+        <p class="icon">
+          <span class="credit">1.59</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/7563902015" title="HILL-TOP波士顿绞肉机 ">
+              <img class="adaptive" src="../images/756390S.jpg" alt="HILL-TOP波士顿绞肉机" title="HILL-TOP波士顿绞肉机" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/7563902015" title="HILL-TOP波士顿绞肉机" style="word-wrap: break-word;word-break: break-all;">HILL-TOP波士顿绞肉机</a></p>
+        <p class="price">￥
+          <em>198</em></p>
+        <p class="icon">
+          <span class="credit">1.98</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/7418912015" title="（自开启防滴漏）SIMELO 首尔风情玻璃自开启防漏油壶550ML两只装（本月精选） ">
+              <img class="adaptive" src="../images/741891S.jpg" alt="（自开启防滴漏）SIMELO 首尔风情玻璃自开启防漏油壶550ML两只装（本月精选）" title="（自开启防滴漏）SIMELO 首尔风情玻璃自开启防漏油壶550ML两只装（本月精选）" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/7418912015" title="（自开启防滴漏）SIMELO 首尔风情玻璃自开启防漏油壶550ML两只装（本月精选）" style="word-wrap: break-word;word-break: break-all;">（自开启防滴漏）SIMELO 首尔风情玻璃自开启防漏油壶55</a></p>
+        <p class="price">￥
+          <em>99</em></p>
+        <p class="icon">
+          <span class="credit">0.99</span></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="pv_shop_category_main_rightbox_hot_list_2" class="pv_shop_category_main_rightbox_hot_list" style="display: none;">
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15148477" title="苏泊尔（SUPOR） 不锈钢多功能电蒸锅 10升大容量 一键火锅 电蒸笼 双层不锈钢电蒸锅ZN28YK7 ">
+              <img class="adaptive" src="../images/15148477S.jpg" alt="冬就这样美,苏泊尔（SUPOR） 不锈钢多功能电蒸锅 10升大容量 一键火锅 电蒸笼 双层不锈钢电蒸锅ZN28YK7" title="冬就这样美,苏泊尔（SUPOR） 不锈钢多功能电蒸锅 10升大容量 一键火锅 电蒸笼 双层不锈钢电蒸锅ZN28YK7" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15148477" title="苏泊尔（SUPOR） 不锈钢多功能电蒸锅 10升大容量 一键火锅 电蒸笼 双层不锈钢电蒸锅ZN28YK7">
+            <font color="#239CDC">
+              <b>[冬就这样美]</b>
+            </font>苏泊尔（SUPOR） 不锈钢多功能电蒸锅 10</a>
+        </p>
+        <p class="price">
+          <span class="original">
+            <del>￥499</del></span>￥
+          <em>299</em></p>
+        <p class="icon">
+          <span class="credit">2.99</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15054883" title="福库CUCKOO 韩国原装进口 CRP-HZ0682FR IH多功能智能高压电饭煲3L语音提示
+            ">
+              <img class="adaptive" src="../images/15054883S.jpg" alt="福库CUCKOO 韩国原装进口 CRP-HZ0682FR IH多功能智能高压电饭煲3L语音提示
+              " title="福库CUCKOO 韩国原装进口 CRP-HZ0682FR IH多功能智能高压电饭煲3L语音提示
+              " onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;">
+            </a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15054883" title="福库CUCKOO 韩国原装进口 CRP-HZ0682FR IH多功能智能高压电饭煲3L语音提示" style="word-wrap: break-word;word-break: break-all;">福库CUCKOO 韩国原装进口 CRP-HZ0682FR I</a></p>
+        <p class="price">￥
+          <em>3,980</em></p>
+        <p class="icon">
+          <span class="credit">39.8</span></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15137785" title="老板（ROBAM） 老板欧式烟灶两件套（CXW-200-8011,JZ（Y/T）-7B16） ">
+              <img class="adaptive" src="../images/15137785S.jpg" alt="老板（ROBAM） 老板欧式烟灶两件套（CXW-200-8011,JZ（Y/T）-7B16）" title="老板（ROBAM） 老板欧式烟灶两件套（CXW-200-8011,JZ（Y/T）-7B16）" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15137785" title="老板（ROBAM） 老板欧式烟灶两件套（CXW-200-8011,JZ（Y/T）-7B16）" style="word-wrap: break-word;word-break: break-all;">老板（ROBAM） 老板欧式烟灶两件套（CXW-200-80</a></p>
+        <p class="price">￥
+          <em>3,780</em></p>
+        <p class="icon"></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15167003" title="方太（FOTILE） 侧吸式抽油烟机燃气灶套装（JN02E+FD23BE） ">
+              <img class="adaptive" src="../images/15167003S.jpg" alt="方太（FOTILE） 侧吸式抽油烟机燃气灶套装（JN02E+FD23BE）" title="方太（FOTILE） 侧吸式抽油烟机燃气灶套装（JN02E+FD23BE）" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15167003" title="方太（FOTILE） 侧吸式抽油烟机燃气灶套装（JN02E+FD23BE）" style="word-wrap: break-word;word-break: break-all;">方太（FOTILE） 侧吸式抽油烟机燃气灶套装（JN02E+</a></p>
+        <p class="price">
+          <span class="original">
+            <del>￥3,990</del></span>￥
+          <em>3,399</em></p>
+        <p class="icon"></p>
+      </div>
+      <div class="item1" mark="hover" hover_class="item1_on" style="height:266px;">
+        <div class="corner_icon1">
+          <p class="image">
+            <a target="_blank" href="http://www.ocj.com.cn/detail/15095560" title="象印（ZOJIRUSHI） 3L微电脑电动电热水瓶 家用保温壶 CD-WBH30C ">
+              <img class="adaptive" src="../images/15095560S.jpg" alt="象印（ZOJIRUSHI） 3L微电脑电动电热水瓶 家用保温壶 CD-WBH30C" title="象印（ZOJIRUSHI） 3L微电脑电动电热水瓶 家用保温壶 CD-WBH30C" onerror="this.src=&#39;http://image1.ocj.com.cn/item_images/imageS.jpg&#39;"></a>
+          </p>
+        </div>
+        <p class="line"></p>
+        <p class="title">
+          <a target="_blank" href="http://www.ocj.com.cn/detail/15095560" title="象印（ZOJIRUSHI） 3L微电脑电动电热水瓶 家用保温壶 CD-WBH30C" style="word-wrap: break-word;word-break: break-all;">象印（ZOJIRUSHI） 3L微电脑电动电热水瓶 家用保温</a></p>
+        <p class="price">￥
+          <em>999</em></p>
+        <p class="icon">
+          <span class="credit">9.99</span></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<!-- 热卖推荐 结束 -->
+</div>
+
+
+
+
+<!-- 底部 -->
+<div class="footerConent">   
+            <div class="g-footer g-container-1190">
+  <div class="g-footer-menu clear_float">
+    <div class="g-footer-fl-menu clear_float">
+      <div class="menu">
+        <div class="list">
+          <h4 class="title-1"></h4>
+          <ul>
+            <li class="title">订购指南</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#1">会员注册</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#2">订购方式</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#3">交换/退货</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#view1">发票指南</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#5">节能补贴</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-2"></h4>
+          <ul>
+            <li class="title">支付配送</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/payment.jsp">支付方式</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#1">配送时间</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#2">配送范围</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#3">免费配送</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#3">有关验货</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-3"></h4>
+          <ul>
+            <li class="title">顾客中心</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-rules.jsp">使用条款</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-credit.jsp">积分规则</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp">退换货政策</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-privacy.jsp">信息保护</a></li>
+            <li><a href="http://www.ocj.com.cn/help/index">更正说明</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-4"></h4>
+          <ul>
+            <li class="title">会员社区</li>
+            <li><a href="http://www.ocj.com.cn/oclub/privilege">会员权益</a></li>
+            <li><a href="https://www.ocj.com.cn/oclub">会员俱乐部</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/convenience.jsp">便民中心</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-5"></h4>
+          <ul>
+            <li class="title">特色服务</li>
+            <li><a href="http://www.ocj.com.cn/installment/online">分期付款</a></li>
+            <li><a href="http://www.ocj.com.cn/comptuan/index">企业团购</a></li>
+            <li><a href="http://www.ocj.com.cn/company/ad/new">营销联盟</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp#cflag">上门服务</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp#cflag">免费退换货</a></li>
+          </ul>
+        </div>
+        <div class="list">
+            <h4 class="title-7"></h4>
+            <ul>
+                <li class="title">商家合作</li>
+                  <li><a href="http://www.ocj.com.cn/newSite/intoPartner">合作招商</a></li>
+                <li><a href="http://www.ocj.com.cn/staticPage/index/partner.jsp">合作伙伴</a></li> 
+            </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="g-footer-fr-board">
+    <!-- 公告 -->
+    <div class="notice clear_float">
+        <h4>公告事项</h4>
+        <div class="notice_box">            
+        <a href="javascript:notice_pop('201812000014','not1');" style="overflow: hidden; height: 29px; opacity: 1;">12月节目商品状况</a><a href="javascript:notice_pop('201812000012','not1');">“疯狂爽12——幸运锦鲤”活动中奖公告</a><a href="javascript:notice_pop('201812000011','not1');">“东方明珠广场舞大赛——直通车”活动投票结果公告</a><a href="javascript:notice_pop('201812000010','not1');">“节节高升”猪年银条（1000克）直播中奖名单公告</a><a href="javascript:notice_pop('201812000009','not1');">12月8日新品季免单顾客</a><a href="javascript:notice_pop('201812000018','not1');">“疯狂爽12每小时直播抽奖”活动中奖公告</a><a href="javascript:notice_pop('201812000014','not1');">12月节目商品状况</a></div>
+        <span class="more"><a href="http://www.ocj.com.cn/notices">更多</a></span>
+    </div>
+
+    <!-- 企业社会责任 -->
+<div class="clear_float">
+        <div class="g-social">
+            <a href="http://www.ocj.com.cn/staticPage/csr/public-welfare-special.jsp?domain_id=8021_6741_9939_1_11261_WASTE&amp;tzm=shanghaigongshangju"> <img src="../images/1_20150814190801_94.jpg" alt="社会责任">
+            </a>     
+        </div>
+        <div class="g-social">
+            <a href="http://www.ocj.com.cn/mydream/more?domain_id=8021_6741_9939_1_11261_WASTE&amp;tzm=shanghaigongshangju"> <img src="../images/1_20150814190832_60.jpg" alt="我的中国梦">
+            </a>
+        </div>
+</div>
+    </div>
+  </div>
+  <div class="g-footer-content g-container-1190">   
+        <div class="logo-dfmz">
+            <a href="http://www.opg.cn/" target="_blank"><img src="../images/logo_dfmz.png"><span>旗下</span></a>
+        </div>           
+        <div class="textIntroFooter">
+            上海东方电视购物有限公司 版权所有  &nbsp; &nbsp; Copyright © 2004-2018 ocj.com.cn All Rights Reserved
+            <div class="textIntroFooter">上海800-708-8000（固话）   &nbsp; &nbsp; （021）51119900（手机）   &nbsp; &nbsp; 全国800-708-8000（固话） &nbsp; &nbsp;  400-889-8000（手机）</div>
+            <div class="textIntroFooter">
+            信息系统安全等级保护评定备案证明编号 31001099027-00001<span></span>信息网络传播视听节目许可证：0908230
+            </div>     
+            <div class="textIntroFooter">食品经营许可证：JY13101100062462 &nbsp; &nbsp; 互联网药品信息服务资格证书（沪）- 非经营性 - 2014-0031 &nbsp; &nbsp; 沪杨食药监械经营许20187004号</div>
+        </div>
+      <div class="g-footer-icon">
+        <div class="g-footer-icon-content">
+          <div class="g-footer-icon-content-box">
+            <ul>           
+                  <li>
+                      <div style="width:auto; margin-top: 8px;">
+                          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002000155" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../images/gawb.jpg" style="float:left;"><!--  <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011002000155号</p>--></a>
+                      </div>
+                  </li>
+                  <li><a href="http://www.miibeian.gov.cn/" target="_blank"><img src="../images/img.footer.icon.1.jpg" alt=""></a></li>
+                  <li>
+                    <!--可信网站图片LOGO安装开始-->
+                    <script src="../js/seallogo.dll"></script>
+                  </li>
+                  <li><a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111011170737657" target="_blank"><img src="../images/img.footer.icon.3.jpg" alt="footerImg"></a></li>
+                  <li><a href="http://www.zx110.org/" target="_blank"><img src="../images/img.footer.icon.4.jpg" alt="footerImg"></a></li>
+                  <li><a href="https://online.unionpay.com/" target="_blank"><img src="../images/img.footer.icon.8.jpg" alt="footerImg"></a></li>
+                  <li><a href="https://www.alipay.com/" target="_blank"><img src="../images/img.footer.icon.9.jpg" alt="footerImg"></a></li>
+                     <li><a href="http://shwg.dianping.com/" target="_blank"><img src="../images/img.footer.icon.wanggou.jpg" alt=""></a></li>       
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../js/goods_list.js"></script>
+</body>
+</html>

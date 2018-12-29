@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+<title>东方购物</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="css/global-v4.css" />
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/common_1.js"></script>
+<!-- <script src="js/common.js"></script> -->
+<script type="text/javascript" src="js/unslider.min.js"></script>
+</head>
+<body>
+<div id="header" style="height: 137px;">
+<!-- 头部信息 -->
+<div id="header-t">
+<div class="header-t con">
+<!-- 头部左 -->
+    <div class="header-t-l fl">
+            <span class="l-welcome">欢迎光临 OCJ.COM.CN</span>
+            <span class="l-normal"><a href="html/denglu.html" id="denglu">登录</a></span>
+            <span class="l-normal" id="tuichubb"><a href="html/sign_in.html" id="zhuce">注册</a></span>
+            <span class="l-normal">送货至:</span>
+            <div class="l-area">
+                <dl>
+                    <dt>
+                        <img src="images/r-area1.png" height="15" width="14"/>
+                        <span class="g-cur-area" id="g-cur-area"><b class="lb">广州</b></span> 
+                        <a href="#" class="change" id="change-areay">[更换]</a>
+                    </dt>
+                </dl>
+            </div>
+    </div>
+    <!--用户信息-->
+        <div class="header-t-r">
+            <div class="r-weixin fr">
+                <dl>
+                    <dt>
+                        <span><img src="images/topimg5.png"></span> 
+                        <b>微信</b> 
+                    </dt>
+                    <div class="r-weixin-pic">
+                        <p class="r-weixin-txt1">扫一扫，关注我们</p>
+                        <img src="images/1_20170904091940_98.jpg" alt="东方购物" style="width: 222px;height: 222px;">
+                        <p class="r-weixin-txt2">
+                            微信服务号：OCJ_FW<br><font color="#A30000">关注并绑定账户送5元积分哟</font>
+                        </p>
+                    </div>
+                </dl>
+            </div>
+            <!-- TV版 -->
+            <span class="r-tv fr"><span class=""><img src="images/r-areaTV.png" height="14" width="16" alt="" /></span><a href="http://www.ocj.com.cn/staticPage/tvShow.jsp">TV版</a></span>
+            <!-- 移动版 -->
+            <span class="r-phone fr">
+                <span class=""><img src="images/r-phone.png" height="14" width="14" alt="" /></span><a href="http://www.ocj.com.cn/app_web/index_app">移动版</a>
+            </span> 
+            <!-- 顾客中心 -->
+            <span class="r-guest-center fr">
+                <span class=""><img src="images/r-areaPepo.png" height="15" width="14" alt="" /></span><a href="http://www.ocj.com.cn/help/index">顾客中心</a>
+            </span>
+            <!-- 我的购物 -->
+            <div class="r-myocj">
+                <dl class="">
+                    <dt> 
+                        <span class=""><img src="images/r-areaPepo2.png" height="15" width="14" alt="" /></span>
+                        <b><a href="javascript:myocjhref(&#39;https://www.ocj.com.cn/myocj/orders&#39;);">我的购物</a></b> 
+                        <span class=""><img src="images/r-area2.png" height="5" width="8" alt="" /></span>
+                    </dt>
+                    <dd>
+                        <div class="r-myocj-more">
+                            <ul>
+                                <li><a href="#">订单查询</a></li>
+                                <li><a href="#">积分查询</a></li>
+                                <li><a href="#">抵用券查询</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">修改信息</a></li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+    </div>
+</div>
+</div>
+<!-- 右侧功能栏 --> 
+    <div class="olympicSidebarWrap" style="background-color: #c7c5eb;"> 
+        <div class="g-side-bar-t"></div>
+        <div class="rightFixNavButton">
+         
+                <div class="rightFixNavButtonLink">
+                        <a href="html/goods_list.html" >
+                            食品饮料
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="html/goods_list.html" >
+                            家居厨房
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="html/goods_list.html">
+                            3C家电
+                        </a>
+                </div>
+                <div class="rightFixNavButtonLink">
+                        <a href="html/goods_list.html">
+                            时尚服饰
+                        </a>
+                </div>
+        </div>
+        <div class="server">
+            <div class="bird"><a href="#">东东客服</a></div>
+            <div class="g-go-top">返回顶部</div>
+        </div>
+    </div>
+    <!-- 头部-下 --> 
+    <div class="header-b con">
+     <!-- 购物车右边logo -->
+    <!-- 非TV LOGO -->
+    <div class="header-b-logo fl">
+         <a href="index.html"> <!-- 根据c_code 显示不同的LOGO -->       
+            <img src="./images/cplogo0.png">       
+        </a>  
+        <a href="#" class="g-main-logo">
+        </a>   
+    </div>
+   
+  <!-- 样式，简单头长搜索框 -->
+<div class="g-search-box">
+    <div class="search-bar">
+        <form name="search_form" id="search_form" onsubmit="return false">
+            <input id="title_srch" type="text" class="keyword" name="keyword" placeholder="" autocomplete="off" size="20" maxlength="20"><button id="tilte_submit">搜索</button>
+        </form>
+    
+        <div class="relation-search" id="topsearch_tips" style="display:none"></div>
+    </div>
+    <div class="search-down">
+     <span class="g-hotlist"><a href="http://www.ocj.com.cn/catalog/rank">销售排行榜</a></span> 
+        <!-- 搜索框下边的推荐 -->
+        <ul class="keywords">
+                    <li>
+                        <a href="#">
+                        <font color="护肤">护肤狂欢</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="厨具">厨房狂欢</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="暖冬大作战">暖冬大作战</font>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="家电">家电盘点</font> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="服饰">时尚盛典</font>                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <font color="金饰品">璀璨珠宝</font>        
+                        </a>
+                    </li>
+        </ul>     
+    </div>
+</div>
+    <!-- 头部-下-购物车 -->
+    <div class="g-header-mycart fl" id="g-header-mycart">
+        <dl id="g-header-mycart-dl">
+            <dt class="ld fr">
+                
+                <span id="shopping">0</span>
+                <a href="#" id="settleup-url"><s></s>购物车<span></span></a>
+            </dt>
+            <dd>      
+                <div class="g-cart-empty">
+                    <p>购物车中还没有商品，赶紧选购吧！</p>
+                </div>
+
+            </dd> 
+        </dl>
+    </div>  
+    <!-- 购物车右边logo -->
+     <div class="headerCompLogoRight fr">
+        <a href="#">
+            <img src="images/1_20180328193915_54.jpg" alt="东方购物">
+        </a>
+    </div>
+    
+</div> 
+</div>
+<!-- 菜单 -->
+<div class="g-header-menu">
+  <div class="g-container-1190 clear_float con">
+    <a class="g-header-tab g-all" href="html/goods_list.html" target="_blank">全部商品分类<!-- <b class="icon-arrow-down9"></b> --></a>
+    <a class="g-header-tab cur" href="index.html" title="首页">首页</a>
+    <a class="g-header-tab" href="#" title="TV购物">TV购物</a>
+    <a class="g-header-tab" href="#" title="团购">团购 </a>
+    <a class="g-header-tab  g-global " href="#" title="全球购">全球购</a>
+ 
+        <a id="shangchengMenu" class="g-header-tab" href="#">商城<!-- <span>新</span> --></a>
+   
+    <a class="g-header-tab" href="#">特惠活动</a>
+    
+    <a class="g-header-tab" href="#" title="会员俱乐部">会员俱乐部</a>
+    <a class="g-header-tab" href="#" title="企业官网">企业官网</a>
+  </div>
+
+
+</div>
+<!-- 分类，tv节目表, 轮播图   -->    
+<div id="setColorChange">
+<div class="setColorChange con">
+        <!-- 分类 -->
+        <div class="indexLeftNav fl">
+            <div class="indexLeftNavBox indexLeftNavBox0">
+                      <span class="iconfont icon-chuju"></span>
+                      <span class="indexLeftNavBoxButton"><a href="html/goods_list.html";>厨房用具、厨房电器</a></span>
+            </div>
+            <div class="indexLeftNavBox indexLeftNavBox1">
+                      <span class="iconfont icon-shafa"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">家居、家饰</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox2">
+                      <span class="iconfont icon-shipin"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">食品饮料</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox3">
+                      <span class="iconfont icon-xianshiqi"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">手机、数码、电脑</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox4">
+                      <span class="iconfont icon-xiyiji"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">家用电器</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox5">
+                      <span class="iconfont icon-huazhuangpin"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">化妆品、洗护沐浴</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox6">
+                      <span class="iconfont icon-qunzi"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">服装、鞋靴、箱包、配饰</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox7">
+                      <span class="iconfont icon-yingerche"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">母婴、玩具、宠物</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox8">
+                      <span class="iconfont icon-zhubao"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">珠宝、收藏、钟表</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox9">
+                      <span class="iconfont icon-chongwuyaopin"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">保健品、户外运动、器械</a></span>
+            </div>
+        
+            <div class="indexLeftNavBox indexLeftNavBox10">
+                      <span class="iconfont icon-qiche01"></span>
+                      <span class="indexLeftNavBoxButton"><a href="#">汽车、旅游、保险、服务</a></span>
+            </div>
+        
+      
+      
+            <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg1">
+                <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao1"><img src="images/frocejuxing.png"></div>
+                <div class="indexLeftNavBoxBgContent"><a href="#"><img src="images/logo3.png"></a></div>
+            </div>
+      
+            <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg0">
+                <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao0"><img src="images/frocejuxing.png"></div>
+                <div class="indexLeftNavBoxBgContent"><a href="#"><img src="images/logo2.png"></a></div>
+            </div>
+            
+            
+            <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg2">
+                <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao2"><img src="images/frocejuxing.png"></div>
+                <div class="indexLeftNavBoxBgContent"><a href="#"><img src="images/quanqiugoulogo.png"></a></div>
+            </div>
+           
+            <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg3">    
+                <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao4"><img src="images/frocejuxing.png"></div>
+                <div class="indexLeftNavBoxBgContent" style="border:none;"><a href="#"><img src="images/logo5.png"></a></div>
+            </div>
+            
+        </div>
+
+    <!-- tv节目 -->
+    <div class="indexLeftNavShowConent">
+                
+    <div class="g-live-box fr" style="width: 970px;">
+        <div class="hIndexvideoNavChangeBox">
+            <div class="hTvChangeBox">
+                <div class="hTvChangeBoxButton hfroce" id="tv1">热销直播<div class="hxiaozhezhao"><img src="images/xiabianjiao.png"></div></div>
+                <div class="hTvChangeBoxButton" id="tv2" style="">热销直播</div>
+            </div>
+
+            <div class="tv-product" id="hindexCommodity4tv1" style="display: block;">
+                <a href="http://www.ocj.com.cn/detail/15263622" class="pic" target="_blank">
+                <span></span>
+                <img src="images/15263622-L.jpg" class="move" style="left: 0px; top: -15px; width: 100px; height: 80px; opacity: 1; overflow: hidden;"></a>
+            <div class="hTvIntroBox">
+            <div class="hTvLogoImg">
+                  <img src="images/tvlogo.png">
+                  <div class="hTvPlayTime" id="time1">00:02:36</div></div>
+                <p class="name">
+                  <a href="http://www.ocj.com.cn/detail/15263622" target="_blank">丝傲(S&amp;O) 仿真舒适短款女士发套</a></p>
+                <div class="hBuyMoney">
+                  <p class="price">￥
+                    <b>1399</b>
+                  </p>
+                  <div class="hyouhuiicon">
+                    <span class="htipjf">积</span>
+                    <span class="htipjfFont">200</span></div>
+                </div>
+                <a href="http://tv.ocj.com.cn/live" class="tvshow">看直播</a></div>
+            </div>
+        <div class="tv-product" id="hindexCommodity4tv2" style="display: none;">
+          <a href="http://www.ocj.com.cn/detail/15250310" class="pic" target="_blank">
+            <span></span>
+            <img src="images/15250310L.jpg" class="move" style="left: 0px; top: -15px; width: 155.366px; height: 155.366px; opacity: 1; overflow: hidden;"></a>
+          <div class="hTvIntroBox">
+            <div class="hTvLogoImg">
+              <img src="images/tvlogo.png">
+              <div class="hTvPlayTime" id="time2">00:12:36</div></div>
+            <p class="name">
+              <a href="http://www.ocj.com.cn/detail/15250310" target="_blank">TOGETHER 绣花全棉夹克棉衣</a></p>
+            <div class="hBuyMoney">
+              <p class="price">￥
+                <b>499</b>
+              </p>
+              <div class="hyouhuiicon">
+                <span class="htipjf">积</span>
+                <span class="htipjfFont">14.97</span></div>
+            </div>
+            <a href="http://tv.ocj.com.cn/live" class="tvshow">看直播</a></div>
+        </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="hIndexvideoBanner" id="hindexProjectList9906_11130"><a href="http://www.ocj.com.cn/detail/15138477?domain_id=8021_6741_9906_1_11130_WASTE" target="_blank"><img src="images/1_20181011100511_38.jpg"></a></div>
+        <div class="hIndexvideoBanner hIndexvideoBannerLogo" id="hindexProjectList9906_11131"><img src="images/1_20161124142439_36.png"></div>
+    </div>
+    </div>
+</div>
+    <!-- 轮播图 -->
+    <div class="slider" id="slider">
+        <div class="slider-inner">
+            <div class="item">
+                <img class="img" style="background: url('images/1_20181218214800_75.jpg');">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url('images/1_20181219143202_25.jpg');">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url('images/1_20181221160939_93.jpg');">
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+<!-- 主播推荐 -->
+<div id="anchor">
+    <div class="anchor con">
+        <h2>主播推荐<span><a href="">TV购物 热卖排行</a></span></h2>
+        <!-- 主播推荐-商品区 -->
+        <div class="anchor-l fl">
+        <!-- js渲染 -->
+        </div>
+        <div class="anchor-r fl">
+            <ul class="anchor-r-ul">
+              <!-- js渲染 -->
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 底部 -->
+<div class="footerConent">   
+            <div class="g-footer g-container-1190">
+  <div class="g-footer-menu clear_float">
+    <div class="g-footer-fl-menu clear_float">
+      <div class="menu">
+        <div class="list">
+          <h4 class="title-1"></h4>
+          <ul>
+            <li class="title">订购指南</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#1">会员注册</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#2">订购方式</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#3">交换/退货</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#view1">发票指南</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/shopping-guide.jsp#5">节能补贴</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-2"></h4>
+          <ul>
+            <li class="title">支付配送</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/payment.jsp">支付方式</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#1">配送时间</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#2">配送范围</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#3">免费配送</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/delivery-guide.jsp#3">有关验货</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-3"></h4>
+          <ul>
+            <li class="title">顾客中心</li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-rules.jsp">使用条款</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-credit.jsp">积分规则</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp">退换货政策</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-privacy.jsp">信息保护</a></li>
+            <li><a href="http://www.ocj.com.cn/help/index">更正说明</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-4"></h4>
+          <ul>
+            <li class="title">会员社区</li>
+            <li><a href="http://www.ocj.com.cn/oclub/privilege">会员权益</a></li>
+            <li><a href="https://www.ocj.com.cn/oclub">会员俱乐部</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/convenience.jsp">便民中心</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4 class="title-5"></h4>
+          <ul>
+            <li class="title">特色服务</li>
+            <li><a href="http://www.ocj.com.cn/installment/online">分期付款</a></li>
+            <li><a href="http://www.ocj.com.cn/comptuan/index">企业团购</a></li>
+            <li><a href="http://www.ocj.com.cn/company/ad/new">营销联盟</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp#cflag">上门服务</a></li>
+            <li><a href="http://www.ocj.com.cn/staticPage/index/tos-policy.jsp#cflag">免费退换货</a></li>
+          </ul>
+        </div>
+        <div class="list">
+            <h4 class="title-7"></h4>
+            <ul>
+                <li class="title">商家合作</li>
+                  <li><a href="http://www.ocj.com.cn/newSite/intoPartner">合作招商</a></li>
+                <li><a href="http://www.ocj.com.cn/staticPage/index/partner.jsp">合作伙伴</a></li> 
+            </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="g-footer-fr-board">
+    
+    <!-- 公告 -->
+    
+  
+    <div class="notice clear_float">
+        <h4>公告事项</h4>
+        <div class="notice_box">            
+        <a href="javascript:notice_pop('201812000014','not1');" style="overflow: hidden; height: 29px; opacity: 1;">12月节目商品状况</a><a href="javascript:notice_pop('201812000012','not1');">“疯狂爽12——幸运锦鲤”活动中奖公告</a><a href="javascript:notice_pop('201812000011','not1');">“东方明珠广场舞大赛——直通车”活动投票结果公告</a><a href="javascript:notice_pop('201812000010','not1');">“节节高升”猪年银条（1000克）直播中奖名单公告</a><a href="javascript:notice_pop('201812000009','not1');">12月8日新品季免单顾客</a><a href="javascript:notice_pop('201812000018','not1');">“疯狂爽12每小时直播抽奖”活动中奖公告</a><a href="javascript:notice_pop('201812000014','not1');">12月节目商品状况</a></div>
+        <span class="more"><a href="http://www.ocj.com.cn/notices">更多</a></span>
+    </div>
+
+    <!-- 企业社会责任 -->
+<div class="clear_float">
+        <div class="g-social">
+            <a href="http://www.ocj.com.cn/staticPage/csr/public-welfare-special.jsp?domain_id=8021_6741_9939_1_11261_WASTE&amp;tzm=shanghaigongshangju"> <img src="images/1_20150814190801_94.jpg" alt="社会责任">
+            </a>     
+        </div>
+        <div class="g-social">
+            <a href="http://www.ocj.com.cn/mydream/more?domain_id=8021_6741_9939_1_11261_WASTE&amp;tzm=shanghaigongshangju"> <img src="images/1_20150814190832_60.jpg" alt="我的中国梦">
+            </a>
+        </div>
+</div>
+    </div>
+  </div>
+  <div class="g-footer-content g-container-1190">   
+        <div class="logo-dfmz">
+            <a href="http://www.opg.cn/" target="_blank"><img src="images/logo_dfmz.png"><span>旗下</span></a>
+        </div>           
+        <div class="textIntroFooter">
+            上海东方电视购物有限公司 版权所有  &nbsp; &nbsp; Copyright © 2004-2018 ocj.com.cn All Rights Reserved
+            <div class="textIntroFooter">上海800-708-8000（固话）   &nbsp; &nbsp; （021）51119900（手机）   &nbsp; &nbsp; 全国800-708-8000（固话） &nbsp; &nbsp;  400-889-8000（手机）</div>
+            <div class="textIntroFooter">
+            信息系统安全等级保护评定备案证明编号 31001099027-00001<span></span>信息网络传播视听节目许可证：0908230
+            </div>     
+            <div class="textIntroFooter">食品经营许可证：JY13101100062462 &nbsp; &nbsp; 互联网药品信息服务资格证书（沪）- 非经营性 - 2014-0031 &nbsp; &nbsp; 沪杨食药监械经营许20187004号</div>
+        </div>
+      <div class="g-footer-icon">
+        <div class="g-footer-icon-content">
+          <div class="g-footer-icon-content-box">
+            <ul>           
+                  <li>
+                      <div style="width:auto; margin-top: 8px;">
+                          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002000155" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/gawb.jpg" style="float:left;"><!--  <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011002000155号</p>--></a>
+                      </div>
+                  </li>
+                  <li><a href="http://www.miibeian.gov.cn/" target="_blank"><img src="images/img.footer.icon.1.jpg" alt=""></a></li>
+                  <li>
+                    <!--可信网站图片LOGO安装开始-->
+                    <script src="js/seallogo.dll"></script>
+                  </li>
+                  <li><a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111011170737657" target="_blank"><img src="images/img.footer.icon.3.jpg" alt="footerImg"></a></li>
+                  <li><a href="http://www.zx110.org/" target="_blank"><img src="images/img.footer.icon.4.jpg" alt="footerImg"></a></li>
+                  <li><a href="https://online.unionpay.com/" target="_blank"><img src="images/img.footer.icon.8.jpg" alt="footerImg"></a></li>
+                  <li><a href="https://www.alipay.com/" target="_blank"><img src="images/img.footer.icon.9.jpg" alt="footerImg"></a></li>
+                     <li><a href="http://shwg.dianping.com/" target="_blank"><img src="images/img.footer.icon.wanggou.jpg" alt=""></a></li>       
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

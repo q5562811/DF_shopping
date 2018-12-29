@@ -1,0 +1,44 @@
+/*用户信息*/
+.g-area dl dt{
+    padding-top: 0;
+}
+/*账号验证*/
+.resist_item{
+    position:relative;
+}
+
+#checkMobileId{
+    display:block;
+    height: 30px;
+    width:200px;
+    position:absolute;
+    left:420px;
+    top:5px;
+}
+/*验证码验证*/
+#sms_title{
+    display:block;
+    height: 30px;
+    width:200px;
+    position:absolute;
+    left:420px;
+    top:5px;
+}
+/*密码验证*/
+#checkPwd{
+    display:block;
+    height: 30px;
+    width:200px;
+    position:absolute;
+    left:420px;
+    top:5px;
+}
+/*二次密码验证*/
+#checkPwd2{
+    display:block;
+    height: 35px;
+    width:200px;
+    position:absolute;
+    left:420px;
+    top:5px;
+}

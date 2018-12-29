@@ -1,0 +1,43 @@
+.submitButton {
+    background: none repeat scroll 0 0 #239CDC;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 12px 50px;
+    cursor:pointer;
+}
+
+.err {
+    color: #E45312;
+    float: left;
+    font-size: 12px;
+    padding-left: 19px;
+    DISPLAY: inline;
+}
+
+.pv_smg_bind_content DIV.middle_box DIV.bind DIV.form DIV.item SPAN.label {
+    display: inline;
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    padding-right: 10px;
+    text-align: right;
+    width: 80px;
+}
+
+.mailbox{
+	WIDTH: 220px; 
+	HEIGHT: 16px; 
+	LINE-HEIGHT: 16px; 
+	PADDING: 10px 29px 10px 9px; 
+	BORDER: #d7d7d7 1px solid; 
+}
+.pv_passport_regist_nav {
+    border-bottom: 3px solid #239CDC;
+    margin-top: 0;
+    width: 100%;
+}
+.pv_myocj_main_left .uls LI.uls_li-specia3 {
+  HEIGHT: 23px; BORDER-BOTTOM: 1px solid #D6D6D6; PADDING-TOP: 8px; PADDING-LEFT: 16px; BACKGROUND-COLOR: #DDF2FE; font-weight:bold; font-color:black;
+}
