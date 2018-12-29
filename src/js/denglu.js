@@ -8,7 +8,7 @@ jQuery(function($){
 /*获取验证码*/
     $GetCode.html(getCode());
     $GetCode.on("click",function(){
-         $(this).val(getCode());
+         $(this).html(getCode());
     })
 /*聚焦去掉提示*/
     $loginuser.on("focus",function(){
@@ -37,12 +37,12 @@ jQuery(function($){
                     Cookie.setCookie("user",JSON.parse(data)[0].username,"","/");
                     location.href = "../index.html";
                 }else{
-                    // $loginpwd.next().html("用户名或密码输入错误，请您重新输入").css("color","red");
-                    alert("用户名或密码输入错误，请您重新输入");
+                    $logincode.next().next().next().html("用户名或密码输入错误").css("color","red");
+                    // alert("用户名或密码输入错误，请您重新输入");
                 }
             })
         }else{
-            $GetCode.next().next().html("验证码输入错误").css("color","red");
+            $logincode.next().next().next().html("验证码输入错误").css("color","red");
         }
         if($logincode.val().length ==""){
             $logincode.next().next().next().html("请输入验证码").css("color","red");

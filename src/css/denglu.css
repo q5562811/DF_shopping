@@ -2,4 +2,10 @@
 .g-area  dl dt{
     padding-top: 0;
 }
-/*TV版*/
+#inputConrol{
+    left:170px;
+    top:10px;
+    height: 32px;
+    width:auto;
+    /*line-height: 32px;*/
+}

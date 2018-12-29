@@ -180,7 +180,7 @@
 .loginnew_box .rcol .form_wrap .form .item .label .tips{_display:inline;float:left;margin-left:2px;color:#de2b3d;font-size:12px;font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .loginnew_box .rcol .form_wrap .form .item .label .faq{_display:inline;float:right;color:#505966;font-size:12px;margin-top:2px;}
 .loginnew_box .rcol .form_wrap .form .item .field{position:relative;}
-.loginnew_box .rcol .form_wrap .form .item .field .input_control{position:absolute;left:250px;top:13px;width:9px;height:9px;background:url(../../images/passport/newlogin.cross1.gif) no-repeat;}
+.loginnew_box .rcol .form_wrap .form .item .field .input_control{position:absolute;left:180px;top:13px;height:9px;background:url(../../images/passport/newlogin.cross1.gif) no-repeat;width: 100px;}
 .loginnew_box .rcol .form_wrap .form .item .field .input_control_error{display:none;position:absolute;left:250px;top:13px;width:9px;height:9px;background:url(../../images/passport/newlogin.cross2.gif) no-repeat;}
 .loginnew_box .rcol .form_wrap .form .item .field .input_control_show{display:block;}
 .loginnew_box .rcol .form_wrap .form .item .field .hock{color:#333333;font-size:16px;height:20px;line-height:20px;width:203px;padding:6px 30px 7px 35px;border:1px solid #c9c8cf;}
@@ -190,7 +190,8 @@
 .loginnew_box .rcol .form_wrap .form .item .field input.valcode{width:78px;padding-left:10px;padding-right:20px;}
 .loginnew_box .rcol .form_wrap .form .item .field3 .input_control{left:90px;}
 .loginnew_box .rcol .form_wrap .form .item .field3 .input_control_error{left:90px;}
-.loginnew_box .rcol .form_wrap .form .item .field .valcode_refresh{display: inline-block;zoom: 1;height: 32px;line-height: 16px;vertical-align: middle;cursor: pointer;	margin-top:-4px;}
+.loginnew_box .rcol .form_wrap .form .item .field .valcode_refresh{display: inline-block;zoom: 1;height: 32px;vertical-align: middle;cursor: pointer;	margin-top:-4px;line-height: 32px;background:#ccc;
+  width:50px;text-align: center;}
 .loginnew_box .rcol .form_wrap .form .item .field span.valcode{/*padding:0 5px;*/}
 
 .loginnew_box .rcol .form_wrap .form .item .field input.focus{color:#333333;}
